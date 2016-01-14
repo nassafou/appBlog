@@ -249,3 +249,11 @@ footer h1
     text-decoration: none;
     color: #760001;
 }
+td, th /* Mettre les bordures th et td ... */
+{
+  border:  1px solid black; /* auront une bordure de 1px */  
+}
+table
+{
+    border-collapse: collapse; /*les bordures du tableau seront collées*/ 
+}
