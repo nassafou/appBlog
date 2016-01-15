@@ -76,6 +76,7 @@
                 </p>
                 
             </form>
+            <p>
             <form action="php.php" method="post">
                 <p>
                     Cochez les aliments que vous aimez manger </br>
@@ -87,6 +88,8 @@
                     <label for="epinard">epinard</label>
                 </p>
             </form>
+            </p>
+            <p>
             <form action="php.php" method="post">
                 <p>
                     Veuillez
@@ -97,15 +100,35 @@
                     <label> Moins 20 ans</label>
                 </p>
             </form>
+            </p>
+            <p>
             <form method="post" action="php.php" >
+                <p>
                 <fieldset>
-                    <legend>Vos cordonnées</legend>
+                    <legend>Vos coordonnees</legend>
+                    <label for="nom">Quel est votre nom ?</label>
+                    <input type="text" name="nom" id="nom" />
+                     
+                     <label for="prenom">Quel est votre prenom ?</label>
+                    <input type="text" name="prenom" id="prenom" />
+                    
+                    <label for="email">Quel est votre email?</label>
+                    <input type="email" name="email" id="email" />
                 </fieldset>
                 <fieldset>
                     <legend>Votre souhait</legend>
-                    
+                    <p>
+                    <input type="radio" name="souhait" value="riche" id="riche" />
+                    <label>Etre riche</label>
+                    <input type="radio" name="souhait" value="riche" id="riche" />
+                    <label>Etre celebre</label>
+                    <input type="radio" name="souhait" value="riche" id="riche" />
+                    <label>Etre intelligent</label>
+                    </p>
                 </fieldset>
+                </p>
             </form>
+            </p>
         </section>
         <footer>
             
