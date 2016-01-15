@@ -257,3 +257,18 @@ table
 {
     border-collapse: collapse; /*les bordures du tableau seront collées*/ 
 }
+fieldset
+{
+    display:  block;
+    vertical-align: top;
+    position: relative;
+}
+form
+{
+    display: inline-block;
+}
+input
+{
+    display: block;
+    vertical-align: top;
+}
