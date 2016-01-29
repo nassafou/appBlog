@@ -1,0 +1,18 @@
+/*Les principaux */
+
+
+
+
+/*navigation*/
+nav{
+    display: inline-block;
+    float: left;
+    width: 150px;
+    border: 1px solid black;
+}
+
+section{
+    display: inline-block;
+    border: 1px solid blue;
+    
+}
