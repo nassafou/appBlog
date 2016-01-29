@@ -45,3 +45,20 @@ div#menu li.soumenu{
 div#menu li.soumenu:hover{
     background: #3CF;
 }
+
+p{
+    text-align: center;
+    width: 900px;
+}
+img{
+    width: 200px;
+    min-width: 200px;
+    max-width: 250px;    
+}
+
+.bloc{
+    top: 20px;
+    left: 600px;
+    height: 200px;
+    position: fixed;
+}
