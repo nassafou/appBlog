@@ -1,0 +1,47 @@
+body{
+    font-size: 11px;
+    font-family: Verdana, Genava, sans-serif;
+    color: #FFF;
+    background-color: #666;
+}
+div#menu ul{
+    padding: 0;
+    margin: 0px;
+    width: 150px;
+    background-color: #CCC;
+    border-right: 5px solid #333;
+}
+div#menu li:hover{
+    background-color: #3CF;
+}
+div#menu ul li{
+    position: relative;
+    list-style: none;
+}
+div#menu ul ul{
+    display: none;
+    position: absolute;
+    top:0;
+    left:200px;
+}
+div#menu li a{
+    padding: 0 0 0 5px;
+    display: block;
+    width: 195px;
+    height: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+div#menu ul.niveau1 li.sousmenu:hover ul.niveau2{
+    display: block;
+}
+div#menu ul.niveau2 li.sousmenu:hover ul.niveau3{
+    display: block;
+}
+div#menu li.soumenu{
+    background:url(../images/arrow.jpg) 175px 1px no-repeat;
+}
+div#menu li.soumenu:hover{
+    background: #3CF;
+}
