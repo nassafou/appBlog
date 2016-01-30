@@ -1,6 +1,7 @@
 /*Les principaux */
-body, footer, header{
-    font-family: vedana sans-serif;
+body{
+    left: 15px;
+    padding: 100px;
 }
 
 /*header*/
@@ -9,6 +10,8 @@ header{
     width: 1200px;
     display: inline-block;
     vertical-align: top;
+    padding: 0px;
+    margin: 5px;
 }
 
 /*navigation*/
@@ -16,8 +19,18 @@ nav{
     display: inline-block;
     border: 1px solid black;
     position: relative;
-    left:  1100px;
+    left:  970px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
 }
+a{
+    text-decoration: none;
+}
+.navigation li {
+    display: inline-block;
+}
+
 
 section{
     display: inline-block;
@@ -29,60 +42,69 @@ section{
 
 /*bannière*/
 #banniere{
-    width: 250px;
+    width: 1200px;
     border: 1px solid black;
+    height: 150px;
+    margin: 2px;
+    padding: 2px;
 }
 article{
     display: inline-block;
     width: 860px;
     border: 1px solid red;
     vertical-align: top;
+    margin: 10px;
+    padding: 10px;
 }
 aside{
     vertical-align: top;
     display: inline-block;
     border: 1px solid green;
     width: 220px;
-    
+    height: 450px;
+    margin-left:0px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #706b64;
+    border-radius: 5px;
+}
+.reseau img{
+    position: relative;
+    vertical-align: bottom;
+    display: inline-block;
 }
 /*footer*/
 footer{
     border: 1px solid black;
+    display: block;
+    vertical-align: top;
     width: 1200px;
 }
 #tweet{
     vertical-align: top;
     display: inline-block;
     border: 1px solid green;
-    width: 300px;
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    position: relative;
     
 }
 #mesPhotos{
     vertical-align: top;
     display: inline-block;
     border: 1px solid green;
-    width: 300px;
-    
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    position: relative;
 }
-#mesAmis{
+#mesAmis ul {
+    position: relative;
     vertical-align: top;
     display: inline-block;
     border: 1px solid green;
-    width: 300px;
-    height: 200px;
-    
-}
-div.amis1{
-   vertical-align: top;
-    display: block;
-    border: 1px solid green;
-    width: 30px;
-    height: 20px; 
-}
-div.amis2{
-   vertical-align: top;
-    display: block;
-    border: 1px solid green;
-    width: 30px;
-    height: 20px; 
+    width: 200px;
+    height: 150px;
+    margin: 5px;
 }
