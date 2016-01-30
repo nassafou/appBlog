@@ -1,20 +1,88 @@
 /*Les principaux */
+body, footer, header{
+    font-family: vedana sans-serif;
+}
 
-
-
+/*header*/
+header{
+    border: 1px solid black;
+    width: 1200px;
+    display: inline-block;
+    vertical-align: top;
+}
 
 /*navigation*/
 nav{
     display: inline-block;
-    float: left;
-    width: 150px;
     border: 1px solid black;
-    vertical-align: top;
+    position: relative;
+    left:  1100px;
 }
 
 section{
     display: inline-block;
+    width: 1200px;
     border: 1px solid blue;
     vertical-align: top;
     
+}
+
+/*bannière*/
+#banniere{
+    width: 250px;
+    border: 1px solid black;
+}
+article{
+    display: inline-block;
+    width: 860px;
+    border: 1px solid red;
+    vertical-align: top;
+}
+aside{
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid green;
+    width: 220px;
+    
+}
+/*footer*/
+footer{
+    border: 1px solid black;
+    width: 1200px;
+}
+#tweet{
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid green;
+    width: 300px;
+    
+}
+#mesPhotos{
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid green;
+    width: 300px;
+    
+}
+#mesAmis{
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid green;
+    width: 300px;
+    height: 200px;
+    
+}
+div.amis1{
+   vertical-align: top;
+    display: block;
+    border: 1px solid green;
+    width: 30px;
+    height: 20px; 
+}
+div.amis2{
+   vertical-align: top;
+    display: block;
+    border: 1px solid green;
+    width: 30px;
+    height: 20px; 
 }
