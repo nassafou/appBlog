@@ -1,3 +1,14 @@
+/*Table*/
+
+#table  {
+ border-collapse: collapse; /*Les bordures du tableau seront collées*/  
+}
+
+td {
+    border: 1px solid black;
+}
+
+
 /*Les principaux */
 body{
     left: 15px;
@@ -27,6 +38,10 @@ nav{
 nav ul{
     list-style-type: none;
 }
+nav a:hover{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
 
 a{
     text-decoration: none;
@@ -39,14 +54,11 @@ nav a{
     display: inline-block;
     margin-right: 15px;
 }
-
-
 section{
     display: inline-block;
     width: 1200px;
     border: 1px solid blue;
-    vertical-align: top;
-    
+    vertical-align: top;  
 }
 
 /*bannière*/
@@ -71,6 +83,18 @@ section{
 #banniere a{
     position: relative;
     top: 120px;
+}
+#banniere_description {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgb(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
 }
 article{
     display: inline-block;
