@@ -19,16 +19,25 @@ nav{
     display: inline-block;
     border: 1px solid black;
     position: relative;
-    left:  970px;
+    left:  870px;
     text-decoration: none;
     padding: 5px;
     margin: 5px;
 }
+nav ul{
+    list-style-type: none;
+}
+
 a{
     text-decoration: none;
 }
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+}
 .navigation li {
     display: inline-block;
+    margin-right: 15px;
 }
 
 
@@ -42,11 +51,26 @@ section{
 
 /*bannière*/
 #banniere{
+    display: inline-block;
     width: 1200px;
     border: 1px solid black;
     height: 150px;
     margin: 2px;
-    padding: 2px;
+    
+}
+#banniere i{
+    position: relative;
+    left:  780px;
+    top: 120px;
+}
+#banniere img{
+    position: relative;
+    left: 750px;
+    top: 120px;
+}
+#banniere a{
+    position: relative;
+    top: 120px;
 }
 article{
     display: inline-block;
@@ -68,6 +92,9 @@ aside{
     background-color: #706b64;
     border-radius: 5px;
 }
+aside#photo_zozor{
+    text-align: center;
+}
 .reseau img{
     position: relative;
     vertical-align: bottom;
@@ -76,35 +103,54 @@ aside{
 /*footer*/
 footer{
     border: 1px solid black;
-    display: block;
+    display: inline-block;
     vertical-align: top;
     width: 1200px;
 }
 #tweet{
     vertical-align: top;
-    display: inline-block;
     border: 1px solid green;
-    width: 200px;
+    width: 300px;
     height: 150px;
     margin: 5px;
     position: relative;
+    display: inline-block;
     
 }
 #mesPhotos{
     vertical-align: top;
-    display: inline-block;
     border: 1px solid green;
-    width: 200px;
+    width: 300px;
     height: 150px;
     margin: 5px;
     position: relative;
+    display: inline-block;
 }
-#mesAmis ul {
-    position: relative;
-    vertical-align: top;
-    display: inline-block;
+#mesPhotos img{
+    margin-left: 5px;
     border: 1px solid green;
-    width: 200px;
-    height: 150px;
-    margin: 5px;
+}
+#mesAmis  {
+    position: relative;
+    border: 1px solid green;
+    width: 300px;
+     display: inline-block;
+     padding: 10px;
+}
+
+#mesAmis ul  {
+    position: relative;
+    display: inline-block;
+     vertical-align: top;
+     margin-top: 0px;
+     width: 48%;
+     padding-left: 2px;
+     text-decoration: none;
+     list-style-type: none;
+}
+#mesAmis a {
+    text-decoration: none;
+}
+#mesAmis li{
+    text-decoration: none;
 }
