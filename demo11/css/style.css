@@ -49,6 +49,9 @@ nav a:hover{
 a{
     text-decoration: none;
 }
+nav{
+background-color: blue;
+}
 nav a{
     font-size: 1.3em;
     color: #181818;
