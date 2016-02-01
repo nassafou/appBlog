@@ -13,3 +13,61 @@ ul.menu1 li a:hover{
 ul.menu1 li span{
     display: none;
 }
+ul.menu1 li a:hover span{
+    display: block;
+    padding: 5px 0 0 0;
+    font-size: 11px;
+    font-weight: 100;
+    background: url(../images/bg_hover.jpg) 0 0 repeat-x #d7d7d7;
+}
+ul.menu1 li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 280px;
+    padding: 10px;
+    border-bottom: 1px solid#000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: #dddddd 0px 1px 1px;
+    
+}
+
+.menu2{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+    width: 300px;
+    background-color: #A7A7A7;
+    
+}
+ul.menu2 li a:hover{
+    background-color: #fff;
+    }
+ul.menu2 li span{
+    display: none;
+}
+ul.menu2 li a:hover span{
+    display: block;
+    padding: 5px 0 0 0;
+}
+ul.menu2 li a{
+    color: #474747;
+    text-decoration: none;
+    display: block;
+    width: 280px;
+    padding: 10px;
+    border-bottom: 1px solid#474747;  
+}
+
+.rouge{
+    display: inline-block;
+    
+}
+.cendre{
+    display: inline-block;
+    
+}
+
+
