@@ -1,0 +1,44 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    
+}
+ul#menu2{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 600px;
+  float: left;
+  background-color: #000000;
+  
+}
+ul#menu2 li{
+    float: left; /*Permet d'aligner le menu a gauche*/
+    margin: 0;
+    padding: 0 
+    
+}
+ul#menu2 li a{
+    float: left;
+    padding: 0 15px 0 15px;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+}
+ul#menu2 li a:hover{
+    background-color: #999;
+}
+ul#menu2 li a:active {
+    background-color: #CCC;
+}
+ul#menu2 li .actif {
+    text-decoration: underline;
+    background-color: #06F;
+}
+ul#menu2 li .actif, ul#menu2 li.actif:hover, ul#menu2 li .actif:active{
+    text-decoration: underline;
+    background-color: #06F;
+    
+}
