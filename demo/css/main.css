@@ -1,0 +1,15 @@
+.menu1{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+    width: 300px;
+    background-color: #cb1515;
+    
+}
+ul.menu1 li a:hover{
+    background-color: #9c1010;
+    }
+ul.menu1 li span{
+    display: none;
+}

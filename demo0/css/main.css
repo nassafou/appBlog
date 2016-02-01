@@ -1,0 +1,32 @@
+/* Elements principaux */
+body{
+    background-image:url(images/logosf2.jpg);
+    
+}
+
+/*Corps*/
+
+.titre-en-bleu{
+    color: blue;
+}
+#titre-en-bleu{
+    color: blue;
+}
+p{
+    
+    width: 200px;
+    min-width: 200px;
+    min-height: 250px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 250px;
+    color: blue;
+    
+    position: relative;
+}
+
+img{
+    top: 20px;
+    left: 40px;
+    position: absolute;
+}
