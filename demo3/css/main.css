@@ -1,0 +1,30 @@
+ul.menu3{
+    margin:0;
+    padding:0;
+    list-style: none;
+    
+}
+ul.menu3 {
+    float: left;
+    position: relative;
+    width: 600px;
+    background-color: #000000;
+    
+}
+ul.menu3 li{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu3 li a {
+    float: left; 
+    padding:0 10px 0 10px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    
+}
