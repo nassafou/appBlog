@@ -1,17 +1,27 @@
-/*liste principale */
-ul.menu3{
+/*liste principale Menu3_b*/
+
+
+
+/*Menu menu_b*/
+ul.menu3_b{
     margin:0;
     padding:0;
     list-style: none;
     float: left;
-    position: relative;
+    position: absolute;
+    top: 150px;
     width: 600px;
     background-color: #000000;
     background: url(../images/bg-menu.jpg) 0 0 repeat-x;
-    
-
 }
 
+ul.menu3_b li{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/*menu3_b*/
 ul.menu3_b li a{
     float: left;
     padding: 0 20 px 0 20px;
@@ -24,6 +34,17 @@ ul.menu3_b li a{
     text-decoration: none;
 }
 
+
+
+
+
+
+/*4 menu3_b*/
+ul.menu3_b li a:hover{
+    background:url(../images/bg-menu.jpg) 0 -56px repeat-x;
+}
+
+/*5 menu3_b*/
 ul.menu3_b li span a{
     display: inline;
     height: 30px;
@@ -31,30 +52,35 @@ ul.menu3_b li span a{
     font-size: 10px;
 }
 
-ul.menu3 a:hover{
-    background: url(../images/bg-menu.jpg) 0 -56px repeat-x;
-}
-ul.menu3_b:{
-    background:url(../images/bg-menu.jpg) 0 0 repeat-x;
+/*6*/
+/*Effet de survole menu3_b */
+ul.menu3_b li span a:hover{
+    background:url(../images/bg-menu.jpg) 0 -30 repeat-x;
 }
 
-ul.menu3_b li a:hover{
-    background:url(../images/bg-menu.jpg) 0 -56px repeat-x;
-}
 ul.menu3_b li span{
     background:url(../images/bg-menu.jpg) 0 0 repeat-x;
 }
-ul.menu3_b:{
-    background:url(../images/bg-menu.jpg) 0 -30px repeat-x;
+
+/*Menu menu3*/
+/*liste principale */
+ul.menu3{
+    margin:0;
+    padding:0;
+    list-style: none;
+    float: left;
+    position: relative;
+    width: 600px;
+    background-color: #000000;
+    background: url(../images/bg-menu.jpg) 0 0 repeat-x;
 }
-
-
+/*2*/
 ul.menu3 li{
     float: left;
     margin: 0;
     padding: 0;
 }
-
+/*3*/
 ul.menu3 li a {
     float: left; 
     padding:0 10px 0 10px;
@@ -66,19 +92,24 @@ ul.menu3 li a {
     text-decoration: none;
     
 }
+/*4*/
 ul.menu3 li a:hover{
     background-color: red;
 }
+/*5*/
 ul.menu3 li span a{
     display: inline;
 }
+/*6*/
 /*Effet de survole */
 ul.menu3 li span a:hover{
     text-decoration: underline;
 }
+/*7*/
 ul.menu3 li span a:active{
     color: #CCC;
 }
+/*8*/
 /*Personnalisation de la sous-liste*/
 ul.menu3 li span {
     display: none;
@@ -90,7 +121,7 @@ ul.menu3 li span {
     top: 40px;
     
 }
-
+/*9*/
 /*apparition du sous menu */
 ul.menu3 li:hover span{
     display: block;
