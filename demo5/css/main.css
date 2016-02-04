@@ -1,0 +1,29 @@
+body{
+    font-family: Vardana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #FFF;
+    background-color: #1E242C;
+}
+pre{
+    color: #6B6B6B;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    line-height: 20;
+    background: url(../images/bg_code.jpg) 0 0 repeat-y;
+    overflow: auto;
+}
+pre code {
+    display: block;
+    margin: 0 0 0 20px;
+    padding: 20px 0 20px 0;
+}
+pre.css{
+    background: url(../images/bg_code_css.jpg) top right no-repeat;
+}
+pre.html{
+    background: url(../images/bg_code_html.jpg) top right no-repeat;
+}
+pre.php{
+    background: url(../images/bg_code_php.jpg) top right no-repeat;
+}
