@@ -20,7 +20,7 @@ body{
     background: url(../images/bg_input.jpg) 0 0 no-repeat;
 }
 .form input:focus{
-    outline: :none;
+    outline:none;
     background: url(../images/bg_input.jpg) 0 -25px no-repeat;
 }
 
