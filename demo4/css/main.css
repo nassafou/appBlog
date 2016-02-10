@@ -1,0 +1,39 @@
+/*Style généraux */
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #FFF;
+    background-color: #1E242C;
+}
+
+ol.liste1{
+ width:495px;
+ margin: 20px;
+ background: url(../images/bg_liste.jpg) repeat-y;
+ padding: 0 0 0 45px;
+}
+ol.liste1 li{
+ margin: 0px;
+ padding: 10px;
+ font-size: 18px;
+ font-weight: bold;
+ color: #FFF;
+ border-bottom: 5px solid #19438D;
+ border-top: 2px solid #2C5FB3;
+}
+ol.liste1 li h1{
+ font-size: 18px;
+ font-weight: bold;
+ color: #FFF;
+}
+ol.liste1 li p{
+ font-size: 12px;
+ font-weight: normal;
+ color: #FFF;
+}
+ol.liste1.premiere-ligne{
+ border-top: 2px solid #353535;
+}
+ol.liste1.derniere-ligne{
+ border-bottom: none;
+}
