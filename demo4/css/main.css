@@ -20,6 +20,7 @@ ol.liste1 li{
  color: #FFF;
  border-bottom: 5px solid #19438D;
  border-top: 2px solid #2C5FB3;
+ background: url(../images/bg_liste_li.jpg) 0 0 repeat-x;
 }
 ol.liste1 li h1{
  font-size: 18px;
