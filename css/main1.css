@@ -5,6 +5,14 @@ body{
     
 }
 
+/*navigateur*/
+nav li {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+
 #filter{
    border: 1px solid red;
    width: 600px;
@@ -17,13 +25,9 @@ body{
     height: 100px;
     display: inline-block;  
 }
-nav li {
+
+#filter  {
     display: inline-block;
-    vertical-align: top;
-    margin-bottom: 20px;
-}
-.tag {
-    display: block;
     vertical-align: top;
     
 }
