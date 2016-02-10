@@ -1,0 +1,43 @@
+/*Style généraux*/
+
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    background-color: #E3E3E3;
+    color: #FFF;
+}
+.form fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.form input{
+    border: none;
+    width: 180px;
+    height: 25px;
+    padding: 0;
+    margin-right: 10px;
+    background: url(../images/bg_input.jpg) 0 0 no-repeat;
+}
+.form input:focus{
+    outline: :none;
+    background: url(../images/bg_input.jpg) 0 -25px no-repeat;
+}
+
+.form button{
+    border: none;
+    width: 90px;
+    height: 25px;
+    background: url(../images/bg_bouton.jpg) 0 0 no-repeat;
+    font-weight: bold;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: url(../images/bg_button.jpg) 0 -25px no-repeat;
+}
+
+.form button:active{
+    background: url(../images/bg_button.jpg) 0 -50px no-repeat;
+}
