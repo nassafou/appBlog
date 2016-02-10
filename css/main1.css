@@ -1,0 +1,34 @@
+/*style généreaux*/
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#filter{
+   border: 1px solid red;
+   width: 600px;
+   height: 100px;
+   display: inline-block;
+}
+#recherche{
+    border: 1px solid blue;
+    width: 600px;
+    height: 100px;
+    display: inline-block;  
+}
+nav li {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+.tag {
+    display: block;
+    vertical-align: top;
+    
+}
+.tri {
+    display: block;
+    vertical-align: top;
+}
+
