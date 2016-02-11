@@ -8,4 +8,13 @@
     background: url(../images/bg_tableau_haut.jpg) 0 0 repeat-x;
     height: 44px;
     
+    
+}
+.tableau.premiere-ligne th{
+    padding: 10px;
+    margin: 0;
+    color: #FFF;
+    font-size: 14px;
+    
+    
 }
