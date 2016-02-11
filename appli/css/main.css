@@ -9,6 +9,21 @@ body{
 #baniere{
     border: 1px solid black;
     height: 100px;
+    width: 1200px;
+    
+}
+ul li {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#nav{
+    position: relative;
+    margin-right: 50px;
+    margin-left: 100px;
 }
 
 /*corps*/
@@ -18,15 +33,17 @@ article{
     display: inline-block;
     vertical-align: top;
     margin: 10px;
+    padding: 5px;
+    text-align: justify;
     
 }
 aside{
     border: 1px solid blue;
-    width: 180px;
+    width: 200px;
     display: inline-block;
-    font-size: 15px;
+    font-size: 12px;
     font-style: italic;
-    text-align: center;
+    text-align: justify;
     margin: 10px;
     padding: 5px;
 }
