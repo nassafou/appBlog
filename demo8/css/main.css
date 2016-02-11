@@ -1,0 +1,11 @@
+.tableau{
+    border: none;
+    text-align: center;
+    width: 600px;
+    border-collapse: collapse;
+}
+.tableau.premiere-ligne{
+    background: url(../images/bg_tableau_haut.jpg) 0 0 repeat-x;
+    height: 44px;
+    
+}
