@@ -5,16 +5,30 @@
     border-collapse: collapse;
 }
 .tableau.premiere-ligne{
-    background: url(../images/bg_tableau_haut.jpg) 0 0 repeat-x;
-    height: 44px;
-    
-    
+    background:url(../images/bg_tableau_haut.jpg) 0 0 repeat-x;
+    height: 44px;   
 }
 .tableau.premiere-ligne th{
     padding: 10px;
     margin: 0;
     color: #FFF;
-    font-size: 14px;
-    
-    
+    font-size: 14px; 
+}
+.tableau td{
+    height: 40px;
+    border-bottom: 1px solid #CCC;
+}
+.tableau.derniere-ligne th{
+    background: url(../images/bg_tableau_bas.jpg) 0 0 repeat-x;
+    font-weight: bold;
+    height: 66px;
+    margin: 0;
+    color: #FFF;
+    font-size: 14px; 
+}
+.tableau.no-border td{
+    height:none;
+}
+.tableau.grise{
+    background-color: #CCC;
 }
