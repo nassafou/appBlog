@@ -1,12 +1,12 @@
 .tableau{
     border: none;
     text-align: center;
-    width: 600px;
+    width: 900px;
     border-collapse: collapse;
 }
-.tableau.premiere-ligne{
-    background:url(../images/bg_tableau_haut.jpg) 0 0 repeat-x;
-    height: 44px;   
+.tableau.premiere-ligne {
+    background: url(../images/bg_tableau_haut.jpg) 0 0 repeat-x;
+    height: 100px;   
 }
 .tableau.premiere-ligne th{
     padding: 10px;
@@ -26,9 +26,16 @@
     color: #FFF;
     font-size: 14px; 
 }
-.tableau.no-border td{
-    height:none;
+.no-border td{
+    border: 1px solid red;
 }
 .tableau.grise{
     background-color: #CCC;
+}
+#back{
+    background: url(images/bg_tableau_bas.jpg) 0 0 repeat-x;
+    border: 1px solid red;
+    width: 900px;
+    height: 100px;
+    
 }
