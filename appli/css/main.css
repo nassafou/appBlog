@@ -19,6 +19,23 @@ ul li {
     margin-left: 50px;
     margin-right: 50px;
 }
+#petite_baniere{
+    border: 1px solid red;
+    height: 30px;
+    width: 700px;
+    position: relative;
+    top: 60px;
+    padding: 2px;
+}
+#bouton_rouge{
+    border: 1px solid green;
+    position: absolute;
+    height: 25px;
+    width: 90px;
+    top: 150px;
+    left: 800px;
+    background: url(../images/bg_bouton.jpg) 0 0 repeat-x;
+}
 
 #nav{
     position: relative;
