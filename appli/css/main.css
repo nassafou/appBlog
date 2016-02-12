@@ -24,7 +24,7 @@ ul li a {
     background-color: #747474;
 }
 ul li a:hover {
-    color: #353535;
+    color: #760001;
 }
 #petite_baniere{
     border: 1px solid red;
@@ -61,6 +61,7 @@ article{
     text-align: justify;
     
 }
+
 aside{
     border: 1px solid blue;
     width: 200px;
@@ -75,22 +76,39 @@ aside{
 /*footer*/
 footer{
     border: 1px solid red;
-    height: 100px;
+    height: 250px;
 }
 #tweet{
  border: 1px solid black;
- height: 90px;
+ height: 150px;
  width: 200px;
  display: inline-block;
+ 
 }
 #mes_photos{
  border: 1px solid black;
- height: 90px;
+ height: 150px;
  width: 200px;
  display: inline-block;
+ vertical-align: top;
 }
 #mes_amis{
  border: 1px solid black;
- height: 90px;
- width: 200px;
+ height: 150px;
+ width: 350px;
+ display: inline-block;
+ vertical-align: top;
+}
+#mes_amis ul li a{
+    text-decoration: none;
+    background-color: red;
+}
+#mes_amis h1{
+    font-size: 10px;
+}
+#mes_amis ul{
+   display:  inline-block;
+   vertical-align: top;
+   margin-top: 0;
+   padding-left: 2px;
 }
