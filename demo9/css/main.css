@@ -1,0 +1,37 @@
+/*Style généreaux*/
+
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+a.bouton{
+    background: url(../images/bg_bouton_left.png) 0 0 no-repeat;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #FFF;
+    text-decoration: none;
+    float: left;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+a.bouton span{
+    display: block;
+    background: url(../images/bg_bouton_right.png) top right no-repeat;
+    padding-right: 10px;
+}
+a.bouton:hover{
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+a.bouton:active{
+    margin-top: 1px;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
