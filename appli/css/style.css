@@ -5,6 +5,14 @@ body{
 }
 
 /*en tete */
+ul li {
+ display: inline-block;
+ list-style: none;
+ vertical-align:
+}
+nav ul{
+    display: inline-block;
+}
 header{
     border: 1px solid black;
     width: 800px;
