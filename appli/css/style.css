@@ -1,0 +1,46 @@
+/*éléments généreaux*/
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*en tete */
+header{
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+}
+div{
+    border: 1px solid red;
+    width: 800px;
+    height: 200px;
+}
+
+/*corps*/
+section{
+    border: 1px solid black;
+    width: 800px;
+    height: 900px;
+}
+article{
+ border: 1px solid black;
+    width: 500px;
+    height: 900px;   
+}
+aside{
+ border: 1px solid blue;
+    width: 200px;
+    height: 900px;      
+}
+
+
+/*pied de page*/
+footer{
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;   
+}
+
+
+
+

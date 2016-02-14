@@ -10,6 +10,8 @@ body{
     border: 1px solid black;
     height: 100px;
     width: 1200px;
+    margin: 5px;
+    background: url(../images/notredame.jpg) 0 0 repeat;
 }
 ul li {
     display: inline-block;
@@ -58,8 +60,7 @@ article{
     vertical-align: top;
     margin: 10px;
     padding: 5px;
-    text-align: justify;
-    
+    text-align: justify; 
 }
 
 aside{
@@ -71,6 +72,7 @@ aside{
     text-align: justify;
     margin: 10px;
     padding: 5px;
+    background-color:#CCC;
 }
 
 /*footer*/
