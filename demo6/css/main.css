@@ -11,6 +11,7 @@ body{
     position: relative;
     margin: 0;
 }
+
 .img-legende a img{
     background: #DADADA;
     border: 2px solid #B5B5B5;
@@ -19,7 +20,51 @@ body{
     padding: 10px;
 }
 
-.img-legende a .bouton{
+.img-legende a.bouton{
     background: url(../images/bouton.png) 0 0 no-repeat;
-    
+    width: 135px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-size: 12px;
+    color: #8E8E8E;
+    padding: 5px;
+}
+
+.img-legende a:hover.bouton{
+    visibility: hidden;
+}
+
+.img-legende a:hover.description{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    background: #DADADA;
+    width: 380px;
+    border-top: 2px solid #B5B5B5;
+}
+
+.img-legende a:hover.description h2{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #8E8E8E;
+}
+
+.img-legende a:hover.description p{
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    color: #8E8E8E;
+}
+
+.img-legende a.description{
+    display: none;
+}
+a{
+    text-decoration: none;
 }
