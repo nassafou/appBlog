@@ -1,0 +1,25 @@
+body{
+    font-family: Verdana, Geneva, sans sans-serif;
+    font-size: 11px;
+    color: #FFF;
+    background-color: #000000;
+}
+
+.img-legende{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin: 0;
+}
+.img-legende a img{
+    background: #DADADA;
+    border: 2px solid #B5B5B5;
+    float: left;
+    margin:  0;
+    padding: 10px;
+}
+
+.img-legende a .bouton{
+    background: url(../images/bouton.png) 0 0 no-repeat;
+    
+}
