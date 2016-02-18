@@ -4,3 +4,36 @@ body{
     line-height: 20px;
     background-color: #CCC;
 }
+.post{
+    background-color: #FFF;
+    width: 500px;
+    padding: 10px;
+}
+.post h1{
+    font-family: Georgia, Times New Roman, Times, serif;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    padding:0;
+    line-height: 40px;
+}
+.post img{
+    margin-bottom: 10px;
+    border-bottom: 10px solid #CCC;
+}
+.post p {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.post.bouton{
+    display: block;
+    padding: 5px;
+    background-color: #000;
+    color: #FFF;
+    font-weight: 900;
+    width: 120px;
+    text-decoration: none;
+
+}
