@@ -5,47 +5,119 @@ body{
 }
 
 /*en tete */
-ul li {
- display: inline-block;
- list-style: none;
- vertical-align:
-}
-nav ul{
+ li a{
     display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    vertical-align: top;
+    margin-left:  10px;
+    padding: 12px;
+    font-size: 40px;
+    left: 40px;
 }
+
+#titre li {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+nav {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    left: 2330px;
+    top:  232px;
+}
+
 header{
     border: 1px solid black;
-    width: 800px;
-    height: 200px;
+    width: 2880px;
+    height: 300px;
+    padding: 10px;
+    margin: 2px;
+    margin-left: 700px;
 }
-div{
+
+#baniere {
     border: 1px solid red;
-    width: 800px;
+    width: 2900px;
     height: 200px;
+    margin-left: 700px;
+    padding: 2px;
+    margin-bottom: 2px;
 }
 
 /*corps*/
 section{
     border: 1px solid black;
-    width: 800px;
-    height: 900px;
+    width: 2900px;
+    margin-left: 700px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
+
 article{
- border: 1px solid black;
-    width: 500px;
-    height: 900px;   
+    border: 1px solid black;
+    width: 2100px;
+    height: 1200px;
+    padding: 5px;
+    margin: 5px;
+    vertical-align: top;
+    display: inline-block;
+    font-family: Verdana sans-serif;
+    font-size: 35px;
+    
 }
+
+
 aside{
- border: 1px solid blue;
-    width: 200px;
-    height: 900px;      
+    border: 1px solid blue;
+    width: 740px;
+    height: 1200px;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: top;
+    display: inline-block;
+    background-color: #CCC;
 }
 
 /*pied de page*/
 footer{
     border: 1px solid black;
-    width: 800px;
-    height: 200px;   
+    width: 2900px;
+    height: 300px;
+    margin-left: 700px;
+}
+
+#tweet {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid red;
+    margin: 2px;
+    width: 700px;
+    height: 280px;
+}
+
+#mes_photos {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid red;
+    margin: 2px;
+    width: 700px;
+    height: 280px;
+}
+
+#mes_amis {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid red;
+    margin: 2px;
+    width: 700px;
+    height: 280px;
 }
 
 
