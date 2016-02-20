@@ -5,19 +5,38 @@ body{
 }
 
 /*en tete */
-ul li {
- display: inline-block;
- list-style: none;
- vertical-align:
-}
-nav ul{
+ li a{
     display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    vertical-align: top;
+    margin-left:  10px;
+    padding: 12px;
+    font-size: 30px;
+    left: 45px;
 }
+
+#titre li {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+nav {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    left: 2705px;
+}
+
 header{
     border: 1px solid black;
-    width: 800px;
-    height: 200px;
+    width: 2900px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 700px;
 }
+
 div{
     border: 1px solid red;
     width: 800px;
@@ -30,13 +49,15 @@ section{
     width: 800px;
     height: 900px;
 }
+
 article{
- border: 1px solid black;
+    border: 1px solid black;
     width: 500px;
     height: 900px;   
 }
+
 aside{
- border: 1px solid blue;
+    border: 1px solid blue;
     width: 200px;
     height: 900px;      
 }
