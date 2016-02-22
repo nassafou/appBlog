@@ -1,0 +1,74 @@
+/*éléments généraux*/
+body{
+   padding: 0;
+   margin: 0;
+   background-color: blue;
+}
+
+
+/*header*/
+#notre_lac{
+    border: 1px solid red;
+    width: 4255px;
+    height: 577px;
+    position: absolute;
+    left: 611px;
+    
+}
+
+/*corps*/
+section{
+    position: absolute;
+    padding: 2px;
+    border: 1px solid black;
+    width: 4255px;
+    height: 1500px;
+    left: 611px;
+    top: 600px;
+}
+article{
+    position: absolute;
+    border: 1px solid red;
+    width: 3200px;
+    text-align: justify;
+    font-size: 90px;
+    padding: 20px;
+    margin: 20px;
+    left: 990px;
+}
+article h1{
+    text-align: center;
+}
+#presentation{
+    padding: 20px;
+    margin: 20px;
+}
+
+#presentation ul {
+    display: inline-block;
+    font-size: 60px;
+    border: 1px solid black;
+    width: 800px;
+    padding: 20px;
+    margin: 20px;    
+}
+
+
+ul li {
+    padding-top:  40px;
+    margin: 80px;
+}
+
+li a{
+    color: red;  
+}
+
+/*footer*/
+
+footer a{
+    position: absolute;
+    color: red;
+    font-size: 50px;
+    top: 2050px;
+    left: 1590px;
+}
