@@ -12,8 +12,16 @@ body{
     vertical-align: top;
     margin-left:  10px;
     padding: 12px;
-    font-size: 40px;
+    font-size: 50px;
     left: 40px;
+}
+
+#titre a:active{
+    color: red;
+}
+
+#titre a:hover{
+    color: red;
 }
 
 #titre li {
@@ -27,7 +35,7 @@ nav {
     display: inline-block;
     vertical-align: top;
     list-style: none;
-    left: 2330px;
+    left: 2030px;
     top:  232px;
 }
 
@@ -38,6 +46,7 @@ header{
     padding: 10px;
     margin: 2px;
     margin-left: 700px;
+    background-color: #000;
 }
 
 #baniere {
@@ -47,6 +56,39 @@ header{
     margin-left: 700px;
     padding: 2px;
     margin-bottom: 2px;
+}
+
+#bouton_rouge {
+    position: absolute;
+    text-align: center;
+    left: 3355px;
+    top: 680px;
+    width: 90px;
+    height: 30px;
+    background: url(../images/bg_bouton.jpg) 0 0 repeat-x;  
+}
+
+#bouton_rouge a{
+    font-size: 30px;
+}
+
+#bouton_rouge a:hover{
+    color: red;
+}
+
+#sous_baniere{
+    position: absolute;
+    left: 709px;
+    top: 600px;
+    height: 120px;
+    width: 2882px;
+    background: url(../images/notredame.jpg) 0 0 repeat-x;
+    font-size: 40px;
+}
+
+#sous_baniere a{
+    position: absolute;
+    top: 80px;
 }
 
 /*corps*/
@@ -91,29 +133,7 @@ aside{
     left: 280px;
 }
 
-#bouton_rouge {
-    position: absolute;
-    text-align: center;
-    left: 3355px;
-    top: 680px;
-    width: 90px;
-    height: 30px;
-    background: url(../images/bg_bouton.jpg) 0 0 repeat-x;  
-}
 
-#sous_baniere{
-    position: relative;
-    top: 680px;
-    background: url(../images/notredame.jpg) 0 0 repeat-x;    
-}
-
-#bouton_rouge a{
-    font-size: 30px;
-}
-
-#bouton_rouge a:hover{
-    color: red;
-}
 
 /*pied de page*/
 footer{
