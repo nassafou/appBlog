@@ -1,0 +1,21 @@
+.bouton{
+    display: block;
+    float: left;
+    cursor: pointer;
+    padding: 5px 5px 5px 10px;
+    margin: 10px 10px 0 0;
+    text-decoration: none;
+    /*mise en forme du bouton */
+    background-color: #FOFOFO;
+    border: 2px solid #B9B9B9;
+    border-top: 1px solid #E2E2E2;
+    border-left: 1px solid #E2E2E2;
+}
+
+.bouton p{
+    padding: 0 5px 0 10px;
+    margin: 0;
+    float: right;
+    line-height: 25px;
+    height: 25px;
+}
