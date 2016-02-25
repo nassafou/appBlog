@@ -1,0 +1,72 @@
+.bouton{
+    display: block;
+    float: left;
+    cursor: pointer;
+    padding: 5px 5px 5px 10px;
+    margin: 10px 10px 0 0;
+    text-decoration: none;
+    /*mise en forme du bouton */
+    background-color: #FOFOFO;
+    border: 2px solid #B9B9B9;
+    border-top: 1px solid #E2E2E2;
+    border-left: 1px solid #E2E2E2;
+}
+
+.bouton p{
+    padding: 0 5px 0 10px;
+    margin: 0;
+    float: right;
+    line-height: 25px;
+    height: 25px;
+    /*mise en forme du texte */
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #595C58;
+    text-decoration: none;
+    font-weight: bold;
+}
+.bouton:hover {
+    background-color: #DBDADA;
+}
+
+.bouton img {
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bouton:active {
+    background-color:#DBDADA;
+    border: 2px solid #B9B9B9;
+    border-bottom: 1px solid #E2E2E2;
+    border-right:1px solid #E2E2E2;
+}
+
+.bouton-supprimer{
+    background-color: #FFDoDo;
+    border: 2px solid #E7ABAB;
+    border-top: 1px solid #F1CFCF;
+    border-left: 1px solid #F1CFCF;
+    color: #FF2525;
+}
+
+.bouton-supprimer:hover{
+    background-color: #FFBDBD;
+}
+
+.bouton-valider:hover{
+    background-color: blue;
+}
+
+.bouton-supprimer:active{
+    background-color: #FFBDBD;
+    border: 2px solid #E7ABAB;
+    border-bottom: 1px solid #F1CFCF;
+    border-right: 1px solid #F1CFCF;
+}
+
+
+
+
