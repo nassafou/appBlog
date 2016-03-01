@@ -1,0 +1,59 @@
+/*éléments généraux */
+body{
+ padding: 0;
+ margin: 0;
+}
+
+/*header*/
+nav{
+   display: inline-block;
+   position: absolute;
+   left: 700px;
+   top: 250px;
+}
+ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+li a{
+    text-decoration: none;
+}
+
+header{
+    border: 1px solid blue;
+    width: 1000px;
+    height: 200px;
+}
+/*corps*/
+#corps{
+    border: 1px solid black;
+    width:  1000px;
+    height: 1000px;
+    position: absolute;
+}
+section{
+    border: 1px solid red;
+    width: 1000px;
+    height: 900px;
+}
+
+article{
+   border: 1px solid blue;
+    width: 800px;
+    height: 200px; 
+}
+
+aside{
+    border: 1px solid blue;
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+/*footer*/
+footer{
+    border: 1px solid black;
+    border: 1px solid blue;
+    width: 1000px;
+    height: 200px; 
+}
