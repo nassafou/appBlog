@@ -1,0 +1,63 @@
+/*styles généreaux*/
+
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #000;
+    line-height: 20px;
+    background-color: #CCC;
+}
+
+#photo1 a{
+    text-decoration: none;
+
+}
+
+ul.galerie  {
+    width: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+ul.galerie li{
+    display: inline;
+    float: left;
+    list-style: none;
+}
+
+ul.galerie a{
+    margin: 0 0 20px 20px;
+    padding: 10px 10px 15px 10px;
+    display: inline;
+    float: left;
+    background:  #FFF;
+    -webkit-box-shadow: 1px 1px 12px #555;
+    -moz-box-shadow: 1px 1px 12px #555;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+ul.galerie img{
+    display: block;
+    padding-bottom: 15px;
+    width: 300px;
+}
+
+ul.galerie a:after {
+    content: attr(title);
+}
+ul.galerie li a:hover{
+    -webkit-box-shadow: 2px 2px 50px #4A4A4A;
+    -webkit-box-shadow: 2px 2px 20px #4A4A4A;
+}
+
+ul.galerie li a:active{
+    -webkit-box-shadow: 1px 1px 12px #4A4A4A;
+    -webkit-box-shadow: 1px 1px 12px #4A4A4A;
+}
+
+
+
