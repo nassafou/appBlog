@@ -1,0 +1,53 @@
+html, body{
+    background-color: #360;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #FFF;
+}
+
+/*Style de la liste*/
+dl{
+    width: 500px;
+    padding: 10px;
+    margin: 0;
+}
+
+/*Style des questions*/
+dl dt{
+    margin: 5px 0 0 0;
+    background-color: #090;
+    -webkit-border-radius: 10px;
+    border-bottom: 1px solid #5fbe00;
+    
+}
+
+dl dt a{
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+}
+
+dl dd{
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 0.8s;
+    -webkit-transition-timing-function: ease;  
+}
+
+dl dd p{
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0;
+}
+
+dl dd:target{
+    height: auto;
+}
+
+@media-webkit-transition{
+    dl dd:target{height:50px;}
+}
