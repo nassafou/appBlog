@@ -1,0 +1,121 @@
+/*éléments généreaux*/
+html, body{
+    background-color: #CCC;
+    font-family: Tohoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+#menudynamique{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    width: 280px;
+       
+}
+
+#menudynamique h1{
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+       
+}
+
+#menudynamique:hover h1,
+#menudynamique:focus h1,
+#menudynamique:active h1{
+    background: none;
+       
+}
+
+#menu1{
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #FFF;
+}
+
+#menu1 h1{
+    z-index: 3;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFF;
+}
+
+#menu1.list-menu,
+#menu2.list-menu,
+#menu3.list-menu{
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #FFF;
+}
+
+#menu2{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #FFF;
+}
+
+#menu2 h1{
+    z-index: 2;
+    width: 80px;
+    position: absolute;
+    left: 80;
+    top: 0;
+}
+
+#menu3{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #FFF;
+}
+
+#menu3 h1{
+    width: 80px;
+    position: absolute;
+    left: 160px;
+    top: 0;
+}
+
+#menu1:hover h1,
+#menu1:focus h1,
+#menu1:active h1{
+    z-index: 4;
+    background: #FFF;
+
+
+#menu1:hover .list-menu,
+#menu1:focus .list-menu,
+#menu1:active .list-menu{
+    z-index: 4;
+    background: #FFF;
+}
+
+
+
+ul.list-menu li{
+    list-style: none;
+}
+ul.list-menu li a:hover{
+    text-decoration: underline;
+}
+
+ul.list-menu li a{
+    color: #000;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;   
+}
+
