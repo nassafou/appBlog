@@ -1,0 +1,70 @@
+html, body{
+    /*background-color: #000;*/
+    font-family: Tohoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+.date{
+    float: left;
+    background: url(../images/carre.jpg) 0 0 repeat;
+    width: 170px;
+    height: 170px;
+    padding: 0;
+    position: relative;
+}
+
+.date p{
+    padding: 0;
+    margin: 0;
+}
+
+.annee p{
+    padding: 0;
+    margin: 0;
+    left: 270px;
+}
+
+.jour {
+    display: block;
+    padding-right: 50px;
+    padding-top: 8px;
+    text-align: left;
+    font-size: 60px;
+    text-shadow: #FFFFFF 1px 1px 1px;
+    text-transform: uppercase;
+}
+
+.mois{
+    display: block;
+    padding-right: 50px;
+    padding-top: 8px;
+    text-align: left;
+    font-size: 60px;
+    text-shadow: #FFFFFF 1px 1px 1px;
+    text-transform: uppercase;    
+}
+
+.annee {
+    display: block;
+    font-size: 30px;
+    text-shadow: #FFFFFF 1px 1px 1px;
+    position: relative;
+    left: 100px;
+    
+}
+
+*:first-child+html.date.annee{
+    right:-28px;
+}
+
+.date p:nth-child(3){
+    right: -25px;
+    bottom: 50px;
+}
+
+.annee{
+    writing-mode:tb-rl;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(60deg);
+}
