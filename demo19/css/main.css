@@ -1,0 +1,110 @@
+/*éléments généreaux*/
+html, body{
+    background-color: #000;
+    font-family: Tohoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+#map{
+    float: left;
+    margin: 20px;
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+#map h1{
+    position: absolute;
+    background-color: #000;
+    font-size: 24px;
+    padding: 5px;
+    margin: 0;
+    color: #FFF;
+    top: 20px;
+    left: 20px;
+    
+}
+
+#map h2{
+    position: absolute;
+    background-color: #000;
+    font-size: 14px;
+    padding: 5px;
+    margin: 0;
+    color: #FFF;
+    top: 65px;
+    left: 20px;
+}
+
+#map #points dt{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FFF;
+    font-size: 14px;
+    padding: 5px;
+    margin: 0;
+    color: #000;
+    z-index: 1;
+}
+
+#map #points #point1{
+    top: 280px;
+    left: 80px;
+}
+
+#map #points dd a span  {
+    line-height: 20px;
+    font-size: 11px;
+    color: #FFF;
+    background: rgba(0,0,0,.6);
+    border: 1px solid #000;
+    padding: 5px 5px 5px 30px;
+    display: none;
+}
+
+#map #points dd a:hover span  {
+    display: block;
+}
+
+#map #points dd a {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+}
+
+#map #points #point1-explication a{
+    top: 280px;
+    left: 80px;
+}
+
+/*position point2*/
+
+#map #points #point2{
+    top: 280px;
+    left: 290px;
+}
+
+
+#map #points #point2-explication a{
+    top: 280px;
+    left: 290px;
+}
+
+/*position point3*/
+
+#map #points #point3{
+    top: 199px;
+    left: 190px;
+}
+
+
+#map #points #point3-explication a{
+    top: 199px;
+    left: 190px;
+}
