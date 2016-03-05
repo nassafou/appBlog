@@ -1,0 +1,21 @@
+html, body{
+    background-color: #313131;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+.bouton{
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+    float: left;
+    outline: 0;
+    color: #606060;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: #FFF 0px 1px 0px, 0px -1px 0px #1B1B1B ;
+    filter: drop-shadow(color=#EEEEEE,offX=0, offY=1), drop-shadow( color=#1B1B1B,offX=0, offY=-1);
+    background-color: #9D9D9D;
+    background:-moz-linear-gradient(-90deg,#D4D4D4, #909090);
+    background: -webkit-gradient(linear,left top, left bottom, from(#D4D4D4), to(#909090));
+    
+}
