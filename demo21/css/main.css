@@ -48,6 +48,6 @@ dl dd:target{
     height: auto;
 }
 
-@media-webkit-transition{
+@media -webkit-transition{
     dl dd:target{height:50px;}
 }
