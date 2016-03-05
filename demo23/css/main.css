@@ -1,0 +1,87 @@
+/*éléments généreaux*/
+html, body{
+    background-color: #D9E2EB;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #000;
+    background: url(../images/page.jpg) 0 0 repeat-x #313131;
+}
+/*Style de la page */
+#page{
+    width: 800px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*Style header*/
+header h1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    line-height: 80px;
+    background-color: #000000;
+    background: url(../images/header.jpg);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 20px;
+    font-size: 40px;
+    
+}
+
+/*Style du menu */
+nav ul{
+    background-color: #2975B3;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background: url(../images/menu.jpg);
+}
+nav ul li{
+    float: left;
+    list-style: none;
+}
+
+nav ul li a{
+    float: left;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover{
+    background-color: #09F;
+}
+
+/*Style corps*/
+section{
+   padding: 20px; 
+}
+
+section .photo{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/*Syle Footer*/
+footer{
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #666;
+    text-align: center;
+    color: #CCC;
+    
+    
+}
+
