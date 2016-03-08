@@ -8,8 +8,7 @@ html, body{
 
 *{
     padding: 0;
-    margin: 0;
-    
+    margin: 0; 
 }
 
 
@@ -22,7 +21,7 @@ html, body{
     padding: 20px 20px 5px 20px;
 }
 
-#footer.bloc1{
+.bloc1{
     float: left;
 }
 
@@ -59,6 +58,7 @@ html, body{
 
 .bloc2{
     float: left;
+    
 }
 
 .bloc2 h1{
@@ -68,6 +68,25 @@ html, body{
     line-height: 48px;
     font-family: Georgia;
     margin: 0 0 15px 0;
+    
+}
+
+.bloc2 ul li a{
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    background-color: #282828;
+    margin: 0 0 2px 0;
+    float: left;
+    
+}
+
+.bloc2 ul li a:hover{
+    background-color:#1C68C6;
+    
 }
 
 .bloc3{
@@ -87,8 +106,19 @@ html, body{
     width: 380px;
 }
 
-.bloc3 ul li a {
+/*.bloc3 ul li a {
     width: 360px;
+}*/
+.bloc3 ul li a{
+    width: 360px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    background-color: #282828;
+    margin: 0 0 2px 0;
+    float: left;
 }
 
 .bloc3 ul li a:hover {
