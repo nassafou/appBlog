@@ -1,0 +1,115 @@
+/*Style Généraux*/
+html, body{
+    background-color: #313131;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #FFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+/*footer*/
+
+#footer{
+    background: #000000;
+    width: 1000px;
+    float: left;
+    padding: 20px 20px 5px 20px;
+}
+
+#footer.bloc1{
+    float: left;
+}
+
+.bloc1 h1{
+    background: url(../images/Globe.png) 0 0 no-repeat;
+    padding: 0 0 0 58px;
+    height: 48px;
+    line-height: 48px;
+    font-family: Georgia;
+    margin: 0 0 15px 0;
+}
+
+.bloc1 ul{
+    list-style: none;
+    width: 200px;
+}
+
+.bloc1 ul li a{
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    background-color: #282828;
+    margin: 0 0 2px 0;
+    float: left;
+}
+
+.bloc1 ul li a:hover{
+    background-color:#1C68C6;
+    
+}
+
+.bloc2{
+    float: left;
+}
+
+.bloc2 h1{
+    background: url(../images/Refresh.png) 0 0 no-repeat;
+    padding: 0 0 0 58px;
+    height: 48px;
+    line-height: 48px;
+    font-family: Georgia;
+    margin: 0 0 15px 0;
+}
+
+.bloc3{
+    float: left;
+}
+
+.bloc3 h1{
+    background: url(../images/Chat.png) 0 0 no-repeat;
+    padding: 0 0 0 58px;
+    height: 48px;
+    line-height: 48px;
+    font-family: Georgia;
+    margin: 0 0 15px 0;
+}
+
+.bloc3 ul {
+    width: 380px;
+}
+
+.bloc3 ul li a {
+    width: 360px;
+}
+
+.bloc3 ul li a:hover {
+    background-color: #E05F09;
+}
+
+
+.bloc4{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    float: left;
+}
+
+.bloc4 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.bloc4 a:hover {
+    text-decoration: underline;
+}
+
+
