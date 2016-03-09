@@ -17,8 +17,8 @@ dl dt{
     margin: 5px 0 0 0;
     background-color: #090;
     -webkit-border-radius: 10px;
-    border-bottom: 1px solid #5fbe00;
-    
+    -moz-border-radius: 10px;
+    border-bottom: 1px solid #5fbe00; 
 }
 
 dl dt a{
@@ -33,9 +33,9 @@ dl dd{
     margin: 0;
     height: 0;
     overflow: hidden;
-    -webkit-transition-property: height;
-    -webkit-transition-duration: 0.8s;
-    -webkit-transition-timing-function: ease;  
+    -webkit-transition-property:height;
+    -webkit-transition-duration:0.8s;
+    -webkit-transition-timing-function:ease;  
 }
 
 dl dd p{
@@ -45,9 +45,9 @@ dl dd p{
 }
 
 dl dd:target{
-    height: auto;
+    height:auto;
 }
 
-@media -webkit-transition{
+@media(-webkit-transition){
     dl dd:target{height:50px;}
 }
