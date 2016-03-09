@@ -17,8 +17,7 @@ html, body{
 }
 
 #menu1 li {
-    float: left;
-    
+    float: left; 
 }
 
 #menu1 li .actif {
@@ -31,10 +30,8 @@ html, body{
     background: url(../images/menu-bg-left.jpg)left top no-repeat;
     height: 40px;
     display: block;
-    padding-left: 10px;
-    
+    padding-left: 10px;  
 }
-
 
 #menu1 li a{
     float: left;
@@ -51,7 +48,7 @@ html, body{
     display: block;
     padding: 0;
     margin: 0;
-    background-color: #7AA;
+    background-color: #7AA13D;
     list-style: none;
     width: 100%;
     float: left;
@@ -64,9 +61,11 @@ html, body{
     line-height: 40px;
     color: #2A2C09;
     text-decoration:none;
-    margin: 0 10px 0 10px
-    
+    margin: 0 10px 0 10px 
 }
 
+#menu2 li .actif{
+    background: url(../images/arrow.jpg) center bottom no-repeat;    
+}
 
 
