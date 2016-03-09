@@ -6,29 +6,68 @@ html, body{
     color: #000;
 }
 
-#menudynamique{
-    display: inline-block;
-    padding: 10px;
-    position: relative;
+#menu-dynamique {
+    position: relative;*/
     width: 280px;
-       
 }
 
-#menudynamique h1{
+#menu-dynamique h1{
     height: 30px;
     line-height: 30px;
     padding: 0;
     margin: 0;
     font-size: 12px;
-    text-align: center;
-       
+    text-align: center;      
 }
 
-#menudynamique:hover h1,
-#menudynamique:focus h1,
-#menudynamique:active h1{
-    background: none;
-       
+.list-menu li {
+    list-style: none;
+}
+
+.list-menu li a{
+    color: #000;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;   
+}
+
+.list-menu li a:hover{
+    text-decoration: underline;
+}
+
+#menu1.list-menu,
+#menu2.list-menu,
+#menu3.list-menu{
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #FFF;
+}
+
+#menu2{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #FFF;
+}
+
+
+
+#menu-dynamique {
+   /* display: inline-block;
+    padding: 10px;
+   /* position: relative;*/
+   /* width: 280px;*/      
+}
+
+
+
+#menu-dynamique:hover h1,
+#menu-dynamique:focus h1,
+#menu-dynamique:active h1{
+    background: none;      
 }
 
 #menu1{
@@ -94,28 +133,4 @@ html, body{
 #menu1:active h1{
     z-index: 4;
     background: #FFF;
-
-
-#menu1:hover .list-menu,
-#menu1:focus .list-menu,
-#menu1:active .list-menu{
-    z-index: 4;
-    background: #FFF;
-}
-
-
-
-ul.list-menu li{
-    list-style: none;
-}
-ul.list-menu li a:hover{
-    text-decoration: underline;
-}
-
-ul.list-menu li a{
-    color: #000;
-    height: 20px;
-    line-height: 20px;
-    text-decoration: none;   
-}
 
