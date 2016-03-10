@@ -1,5 +1,4 @@
 /*Elements généreaux */
-
 html, body{
     height: 100%;
     width: 100%;
@@ -76,7 +75,7 @@ html, body{
     background-color: #FFF;
 }
 
-.box .bouton-fermer{
+.bouton-fermer{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -90,13 +89,13 @@ html, body{
     background: url(../images/icone_close.jpg) 0 -22px no-repeat;
 }
 
-#lightbox .box h2{
+.box h2{
     padding: 0;
     margin: 0;
     font-size: 24px;
 }
 
-#lightbox.box p{
+.box p{
     line-height: 20px;
-    color: 333px;
+    color:333px;
 }
