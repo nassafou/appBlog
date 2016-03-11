@@ -13,36 +13,36 @@ body{
     padding: 5px;
 }
 
-.galerie.vignette img:hover{
+.vignette img:hover{
     border: 2px solid blue;
 }
 
-.galerie.vignette img{
+.vignette img{
     border: 2px solid #CCC;
     padding: 0;
     margin: 5px;
 }
 
-.galerie.vignette span{
+.vignette span{
     background-color: #FFF;
     padding: 5px;
     position: absolute;
     visibility: hidden;
     text-align: center;
 }
-.galerie.vignette:hover span{
+.vignette:hover span{
     visibility: visible;
     top: 40px;
     left: 250px;
     z-index:50;
 }
-.galerie.vignette span p{
+.vignette span p{
     color: #000;
-    font-weight: blod;
+    font-weight:blod;
     font-size: 14px;
     margin: 0;
     padding: 5px;
 }
-.galerie.vignette span img, .galerie.vignette span img:hover{
+.vignette span img, .vignette span img:hover{
     border: none;
 }
