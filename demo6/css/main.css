@@ -62,7 +62,7 @@ body{
     color: #8E8E8E;
 }
 
-.img-legende a.description{
+.img-legende a .description{
     display: none;
 }
 a{

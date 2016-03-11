@@ -6,11 +6,13 @@ body{
     background-color: #E3E3E3;
     color: #FFF;
 }
+
 .form fieldset{
     margin: 0;
     padding: 0;
     border: none;
 }
+
 .form input{
     border: none;
     width: 180px;
@@ -19,6 +21,7 @@ body{
     margin-right: 10px;
     background: url(../images/bg_input.jpg) 0 0 no-repeat;
 }
+
 .form input:focus{
     outline:none;
     background: url(../images/bg_input.jpg) 0 -25px no-repeat;
