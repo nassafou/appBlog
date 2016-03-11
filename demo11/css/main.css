@@ -4,27 +4,32 @@ body{
     color: #FFF;
     background-color: #666;
 }
-div#menu ul{
+
+ #menu ul{
     padding: 0;
     margin: 0px;
     width: 150px;
     background-color: #CCC;
     border-right: 5px solid #333;
 }
-div#menu li:hover{
+
+#menu li:hover{
     background-color: #3CF;
 }
-div#menu ul li{
+
+#menu ul li{
     position: relative;
     list-style: none;
 }
-div#menu ul ul{
+
+#menu ul ul{
     display: none;
     position: absolute;
     top:0;
     left:200px;
 }
-div#menu li a{
+
+#menu li a{
     padding: 0 0 0 5px;
     display: block;
     width: 195px;
@@ -33,16 +38,20 @@ div#menu li a{
     font-weight: bold;
     color: #333;
 }
-div#menu ul.niveau1 li.sousmenu:hover ul.niveau2{
+
+#menu ul.niveau1 li.sousmenu:hover ul.niveau2{
     display: block;
 }
-div#menu ul.niveau2 li.sousmenu:hover ul.niveau3{
+
+#menu ul.niveau2 li.sousmenu:hover ul.niveau3{
     display: block;
 }
-div#menu li.soumenu{
+
+.soumenu{
     background:url(../images/arrow.jpg) 175px 1px no-repeat;
 }
-div#menu li.soumenu:hover{
+
+#menu li.soumenu:hover{
     background: #3CF;
 }
 
@@ -50,6 +59,7 @@ p{
     text-align: center;
     width: 900px;
 }
+
 img{
     width: 200px;
     min-width: 200px;
