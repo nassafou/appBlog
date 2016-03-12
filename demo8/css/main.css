@@ -4,21 +4,25 @@
     width: 900px;
     border-collapse: collapse;
 }
-.tableau.premiere-ligne {
+
+.premiere {
     background: url(../images/bg_tableau_haut.jpg) 0 0 repeat-x;
-    height: 100px;   
+    height: 44px;   
 }
-.tableau.premiere-ligne th{
+
+.premiere th{
     padding: 10px;
     margin: 0;
     color: #FFF;
     font-size: 14px; 
 }
+
 .tableau td{
     height: 40px;
     border-bottom: 1px solid #CCC;
 }
-.tableau.derniere-ligne th{
+
+.derniere td{
     background: url(../images/bg_tableau_bas.jpg) 0 0 repeat-x;
     font-weight: bold;
     height: 66px;
@@ -26,16 +30,12 @@
     color: #FFF;
     font-size: 14px; 
 }
+
 .no-border td{
     border: 1px solid red;
 }
-.tableau.grise{
+
+.grise{
     background-color: #CCC;
 }
-#back{
-    background: url(images/bg_tableau_bas.jpg) 0 0 repeat-x;
-    border: 1px solid red;
-    width: 900px;
-    height: 100px;
-    
-}
+
