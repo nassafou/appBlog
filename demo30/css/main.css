@@ -2,10 +2,10 @@ html, body{
     padding-top:  10px;
     margin:  0px;
 }
-
-.row{
-    border: 1px solid blue;
+.ligne{
+    height: 19px;
 }
+
 
 [class*="col-"], footer {
     background-color: lightpink;
