@@ -5,9 +5,9 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <style type="text/css">
         /*Style pour l'exemple*/
-        [class*="col"] {margin-bottom: 20px;}
-        img{ width: 100%;}
-        body{margin-top: 10px; }
+        .col-md-8, .col-sm-10{ line-height: 200px;}
+        .col-md-12{ line-height: 80px;}
+        .clearfix:after{ clear: both;}
     </style>
 </head>
 <body>
@@ -17,28 +17,34 @@
                Entete
             </div>
         </header>
+        <div class="col-lg-2">
+            <div  class="row">
+                 <aside  class="col-md-12">
+                 aside
+                 </aside>
+                 <aside  class="col-md-12">
+                  aside
+                 </aside>
+            </div>
         </div>
-     <div class="row">
-        <div class="row">
-        <aside  class="col-lg-2">
-            <div class="row" >
-                aside
-            </div>
-        </aside>
-        
-        
-        <section class="col-lg-8">
-            
+        <section class="col-md-10 col-md-8">
                section 
-            
         </section>
-        <aside   class="col-lg-2">
-            <div class="row">
-                aside
-            </div>
-        </aside>
-        
-    </div>
+        <div class="clearfix visible-sm "></div>
+    
+        <div class="hidden-xs, col-md-2">
+            <div  class="row">
+        <aside  class="col-md-12">
+            aside 3
+            </aside>
+        <aside  class="col-md-12">
+            aside 4
+            </aside>
+           </div>
+        </div>
+        <footer class="col-md-12" >
+            pied de page
+        </footer>
      </div>
 </body>
 </html>
