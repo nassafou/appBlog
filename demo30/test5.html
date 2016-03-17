@@ -5,23 +5,44 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <style type="text/css">
         /*Style pour l'exemple*/
-        .col-md-8, .col-sm-10{ line-height: 200px;}
-        .col-md-12{ line-height: 80px;}
+        .col-md-2 { line-height: 100px;}
+        .col-md-5 { line-height: 200px;}
+        .col-md-12 { line-height: 80px;}
         .clearfix:after{ clear: both;}
     </style>
 </head>
 <body>
-    <div class="container">
-       <header class="col-lg-12" >
-           Entête
+     <header  >
+        <div class="visible-lg col-md-12">
+            Entête large
+        </div>
+        <div class="visible-md col-sm-12">
+            Entête moyenne
+        </div>
+        <div class="visible-sm col-12">
+            Entête tablette
+        </div>
+        <div class="visible-xs col-12">
+            Entête smartphone
+        </div>
        </header>
-       <div class="col-lg-2">
-         <aside class="row">
-              <div class="row">
-                navigation
-              </div>
-         </aside>
-       </div>
+    <div class="container">
+      <div class="row">
+         <nav class="col-md-12 col-lg-12">
+            Navigation
+         </nav>
+         <section class="col-md-6 col-lg-5">
+            Section
+         </section>
+         <section class="col-md-6 col-lg-5">
+            Section
+         </section>
+      </div>
+      <footer class="row">
+        <div class="col-md-12">
+            Pied de page
+        </div>
+      </footer>
      </div>
 </body>
 </html>
