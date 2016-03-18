@@ -7,7 +7,12 @@
         /*Style pour l'exemple*/
         [class*="col"] {margin-bottom: 20px;}
         img{ width: 100%;}
-        body{margin-top: 10px; }
+        body{margin-top: 10px;
+             background-color: #DDD;}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -105,6 +110,37 @@
                     </tbody>
                 </table>
             </section>
+        </div>
+        
+            <div class="row">
+                <section class="col-sm-8">
+                    <form class="well">
+                        <legend>Si vous voulez me laissaez un message </legend>
+                        <h4>Comment m'avez-vous trouve</h4>
+                        <fieldset>
+                            <label for="ami" class="radio">
+                                <input type="radio" name="origine" value="ami" id="ami">
+                                Par un ami
+                            </label>
+                            <label for="web" class="radio">
+                                <input type="radio" name="origine" value="web" id="web">
+                                Sur le web
+                            </label>
+                            <label for="hasard" class="radio">
+                                <input type="radio" name="origine" value="hazard" id="hazard">
+                                Par hasard
+                            </label>
+                            <label for="autre" class="radio">
+                                <input type="radio" name="origine" value="autre" id="autre">
+                                Autre
+                            </label>
+                            <label for="textarea">Votre message :</label>
+                            <textarea id="textarea" rows="4" class="form-control"></textarea>
+                             <p class="help-block">Vous pouvez agrandir la fenetre</p>
+                             <button class="btn- btn-primary">Envoyer</button>
+                        </fieldset>
+                    </form>
+                </section>
             <section class="col-sm-4">
                 <address>
                     <p>Vous pouvez me contacter:</p>
