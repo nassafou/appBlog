@@ -1,0 +1,66 @@
+<html>
+<head>
+    <!--<link href="css/main.css" rel="stylesheet" type="text/css" />-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        /*Style pour l'exemple*/
+       
+    </style>
+</head>
+<body>
+    <div class="row">
+        <form class="col-lg-5">
+            <fieldset>
+                <legend>Validation, erreur et succes</legend>
+                <div class="form-group has-error has-feedback">
+                    <label class="control-label" for="idError">Erreur</label>
+                    <input type="text" class="form-control" id="idError">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                    <span class="help-block">Corrigez l'erreur s'il vous plait</span>
+                </div>
+                <div class="form-group has-warning has-feedback">
+                    <label class="control-label" for="idWarning">Avertissement</label>
+                    <input type="text" class="form-control" id="idWarning">
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                    <span class="help-block">Il y a un probleme dans la saisie</span> 
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label class="control-label" for="idSuccess">Reussite</label>
+                    <input type="text" class="form-control" id="idSuccess">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    <span class="help-block">Saisie correcte</span>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <form class="form-inline well ">
+                <div class="form-group">
+                    <label class="sr-only" for="text">Saisie</label>
+                    <input id="text" type="text" class="form-control" placeholder="Texte Ici">
+                </div>
+                <button type="submit" class="btn btn-primary pull-right">Envoyer</button>
+                <div class="alert alert-block alert-danger" style="display: none">
+                    <h4>Erreur !</h4>
+                    Vous devez entrer au moins 4 caracteres !
+                </div>
+            </form>
+        </div>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script>
+            $(function(){
+                $("form").on("submit", function(){
+                    if($("input").val().length < 4){
+                        $("div.form-group").addClass("has-error");
+                        $("div.alert").show("slow") .delay(4000) .hide("slow");
+                        return false;
+                    }
+                        });
+            });
+        </script>
+    </div>
+</body>
+</html>
