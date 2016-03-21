@@ -1,0 +1,73 @@
+<html>
+<head>
+    <!---<link href="css/main.css" rel="stylesheet" type="text/css" />--->
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <style type="text/css">
+        /*Style pour l'exemple*/
+        [class*="col"] {margin-bottom: 20px;}
+        img{ width: 100%;}
+        body{background-color: #DDD; }
+        .form-inline{ margin-top: 20px}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+        <input type="button" class="btn btn-primary" id="animer" value="Animer">
+    </div>
+     <script src="https://code.jquery.com/jquery.js"></script>
+     <script>
+        function timer(n) {
+            //fonction de progression
+            $(".progress-bar").css("width", n + "%");
+            if (n < 100) {
+                //fonction de la progression
+                setTimeout(function(){
+                    timer(n + 10);
+                }, 200);
+            }
+        }
+        $(function(){
+            $("#animer").click(function(){
+                timer(0);
+                });
+            });
+     </script>
+    </div>
+    <div class="row">
+        
+        <div class="container">
+        <div class="progress progress-striped">
+            <div class="progress-bar"></div>
+        </div>
+        <input type="button" class="btn btn-primary" id="animer" value="Animer">
+    </div>
+     <script src="https://code.jquery.com/jquery.js"></script>
+     <script>
+        function timer(p) {
+            //fonction de progression
+            $(".progress-bar").css("width", p + "%");
+            if (n < 100) {
+                //fonction de la progression
+                setTimeout(function(){
+                    timer(p + 10);
+                }, 200);
+            }
+        }
+        $(function(){
+            $("#animer").click(function(){
+                timer(0);
+                });
+            });
+     </script>
+    </div>
+</body>
+</html>
