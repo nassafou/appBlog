@@ -1,0 +1,52 @@
+<html>
+<head>
+    <!---<link href="css/main.css" rel="stylesheet" type="text/css" />--->
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <style type="text/css">
+        /*Style pour l'exemple*/
+        [class*="col"] {margin-bottom: 20px;}
+        img{ width: 100%;}
+        body{background-color: #DDD; }
+        .form-inline{ margin-top: 20px}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+        
+        <div class="container">
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-warning"></div>
+            <div class="progress-bar progress-bar-info"></div>
+            <div class="progress-bar progress-bar-success"></div>
+        </div>
+        <div id="pourcentage" class="pull-right"></div>
+        <input type="button" class="btn btn-primary" id="animer" value="Animer">
+    </div>
+     <script src="https://code.jquery.com/jquery.js"></script>
+     <script>
+        function timer(p) {
+            //fonction de progression
+            $(".progress-bar").css("width", p + "%");
+            $("#pourcentage").text(p + "%");
+            if (p < 33.2) {
+                //fonction de la progression
+                setTimeout(function(){
+                    timer(p + 3.33);
+                }, 200);
+            }
+        }
+        $(function(){
+            $("#animer").click(function(){
+                timer(0);
+                });
+            });
+     </script>
+    </div>
+</body>
+</html>
