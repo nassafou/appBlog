@@ -32,11 +32,28 @@
                         <li><a href="#">Accueil</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Témoignages<b class="caret"></b></a>
-                            
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dompteurs</a></li>
+                                <li><a href="#">Zoos</a></li>
+                                <li><a href="#">Chasseurs</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Autres témoignages</a></li>
+                            </ul>
                         </li>
+                        <li><a href="#">Liens</a></li>
+                        <li><a href="#">Références</a></li>
                     </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input type="text" style="width: 150px" class="input-sm form-control" placeholder="Rechercher">
+                            <span class="input-groupe-btn">
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
-            
         </nav>
         <header class="row">
             <div class="col-sm-12 col-lg-7">
@@ -57,7 +74,8 @@
                 </p>
                 <p>Voici ce qu'en dit le wikipedia:</p>
                 <blockquote>
-                      Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker
+                      Le Lorem Ipsum est <a data-toggle="tooltip" href="#" title="Classe de vertebre ">simplement</a> du faux texte employé dans la composition et la mise en
+                      page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie<a data-toggle="tooltip" href="#" title="Classe de vertebre ">depuis</a>  depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker
                     <br>
                     <small class="pull-right">Wikipedia</small><br>
                 </blockquote>
@@ -230,5 +248,15 @@
             </section> 
         </div>
     </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('.carousel').carousel();
+            $('blockquote a').tooltip();
+            $('.btn-group .btn:nth-child(1)').click(function(){
+                })
+            });
+    </script>
 </body>
 </html>
