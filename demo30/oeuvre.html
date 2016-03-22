@@ -20,15 +20,19 @@
     <div class="row">
         <br>
         <br>
-        <a>Changer</a>
+        <a >Changer</a>
         <div id="item" class="collapse"> Contenu</div>
         <script src="assets/js/jquery.js"></script>
-         <script src="assets/js/bootstrap.min.js"></script>
-         <!--<script src="js/jquery.js"></script>-->
+         <script src="assets/bootstrap/bootstrap.min.js"></script>
+         <script src="js/jquery.js"></script>
          <script>
             $(function() {
                 $('a').click(function(){
-                    $('#item').collapse('toggle')});
+                    $('#item').collapse('toggle');
+                    });
+                $('#item').on('shown.bs.collapse', function(){
+                    alert('On me voit !');
+                })
                 });
          </script>
     </div>
