@@ -30,6 +30,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Liens</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Témoignages<b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -79,6 +80,26 @@
                     <br>
                     <small class="pull-right">Wikipedia</small><br>
                 </blockquote>
+            </div>
+        </section>
+        <section class="row">
+            <div class="media col-lg-12">
+                <div class="pull-right">
+                   <iframe width="1120" height="320" src="http://www.ndtv.com/video/player/news/t20-world-cup-don-t-blame-shahid-afridi-for-india-loss-says-malik/408699?hp&video-featured" framenborder="0" allawfullscreen></iframe>
+                </div>
+                <div class="media-body pull-right">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary">
+                            <input type="radio">Video 1
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio">Video 2
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio">Video 3
+                        </label>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="row">
@@ -254,7 +275,14 @@
         $(function(){
             $('.carousel').carousel();
             $('blockquote a').tooltip();
-            $('.btn-group .btn:nth-child(1)').click(function(){
+            $('.btn-group .btn:nth-child(1)').click(function() {
+                $('iframe').attr('src', 'http://www.ndtv.com/video/player/news/t20-world-cup-don-t-blame-shahid-afridi-for-india-loss-says-malik/408699?hp&video-featured' );
+                })
+            $('.btn-group .btn:nth-child(2)').click(function() {
+                $('iframe').attr('src', 'http://www.ndtv.com/video/player/news/when-virender-sehwag-compared-pakistan-to-old-wine/408736?vod-mostpopular' );
+                })
+            $('.btn-group .btn:nth-child(3)').click(function() {
+                $('iframe').attr('src', 'http://www.ndtv.com/video/player/news/india-confident-unit-pakistan-always-in-chaos-sangakkara/408553?vod-mostpopular' );
                 })
             });
     </script>
