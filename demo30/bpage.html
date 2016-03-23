@@ -1,0 +1,75 @@
+<html>
+<head>
+    <!--<link href="css/main.css" rel="stylesheet" type="text/css" />-->
+    <meta charset="utf-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        /*Style pour l'exemple*/
+        [class*="col-"] {margin-bottom: 20px;}
+        img{ width: 100%;}
+        body{background-color: #DDD; }
+        .form-inline{ margin-top: 20px}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }
+        a:active, a:focus {outline: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Les Fleurs</a>
+            </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Liens</a></li>
+                        <li class="dropdown">
+                            <div class="btn-group">
+                                <button class="btn btn-info">Action</button>
+                            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Dompteurs</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-picture"></span>Zoos</a></li>
+                                <li><span class="glyphicon glyphicon-screenshot"></span><a href="#">Chasseurs</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>Autres témoignages</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Références</a></li>
+                    </ul>
+                            </div>
+                    <form class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input type="text" style="width: 150px" class="input-sm form-control" placeholder="Rechercher">
+                            <span class="input-groupe-btn">
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+        </nav>
+        <header class="row">
+            <div class="col-sm-12 col-lg-7">
+            <h1>Mon amour pour les fleurs</h1>
+            </div>
+            <div class="col-sm-12 col-lg-5">
+                <form class="form-inline pull-right">
+                    <input type="text" class="form-control" placeholder="Texte ici">
+                    <button type="submit" class="btn btn-primary btn-xs">Rechercher</button>
+                </form>
+            </div>
+        </header>
+        <section class="row">
+            
+</body>
+</html>
