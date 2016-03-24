@@ -1,0 +1,51 @@
+<html>
+<head>
+    <!--<link href="css/main.css" rel="stylesheet" type="text/css" />-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        /*Style pour l'exemple*/
+        [class*="col-"] {margin-bottom: 20px;}
+        img{ width: 100%;}
+        body{padding-top: 20px; }
+        .form-inline{ margin-top: 20px}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }
+         
+    </style>
+</head>
+<body>
+     
+            <button class="btn btn-primary">Informations</button>
+            <div class="modal" id="infos">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">X</button>
+                            <h4 class="modal-title">Plus d'informations</h4>
+                        </div>
+                        <div class="modal-body">
+                            Le fleur est une plante de type de la famille des 
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+     <script src="js/jquery.js"></script>
+     <!--<script src="bootstrap/js/bootstrap.js"></script>-->
+     <script src="bootstrap/js/bootstrap.min.js"></script>
+      <!--<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>-->
+      <!--<script src="js/jquery.js"></script>-->
+     <script>
+        $('.btn').click(function () {
+            $('modal').modal('show');
+            });
+     </script>
+</body>
+</html>
