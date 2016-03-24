@@ -19,7 +19,12 @@
 </head>
 <body>
      <div class="container">
-            <button data-toggle="modal"  href="demo30/remote.html" data-target="#" class="btn btn-primary">Informations</button>
+        <div class="btn-group">
+            <button id="page1" type="button" class="btn btn-primary">Page 1</button>
+            <button id="page2" type="button" class="btn btn-primary">Page 2</button>
+            <button id="page3" type="button" class="btn btn-primary">Page 3</button>
+            </div>
+        
             <div class="modal fade" id="infos">
                 <div class="modal-dialog">
                     <div class="modal-content"></div>
@@ -28,5 +33,20 @@
      </div>
      <script src="assets/js/jquery.js"></script>
      <script src="assets/js/bootstrap.min.js"></script>
+     <script src="js/jquery.js"></script>
+     <script >
+        $("body").on("hidden.bs.modal", ".modal", function(){
+            $(this).removeData("bs.modal");
+            });
+        $("#page1").click(function(){
+            $("#infos").modal({ remote: "remote1.html"}, "show");
+            });
+        $("#page2").click(function(){
+            $("#infos").modal({ remote: "remote2.html"}, "show");
+            });
+        $("#page3").click(function(){
+            $("#infos").modal({ remote: "remote3.html"}, "show");
+            });
+     </script>
 </body>
 </html>
