@@ -1,0 +1,47 @@
+ <html>
+<head>
+    <!--<link href="css/main.css" rel="stylesheet" type="text/css" />-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        /*Style pour l'exemple*/
+        [class*="col-"] {margin-bottom: 20px;}
+        img{ width: 100%;}
+        body{padding: 20px; }
+        .form-inline{ margin-top: 20px}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }  
+    </style>
+</head>
+<body>
+        <br>
+        <br>
+        <div class="row">
+            <ul class="nav nav-tabs">
+                <li ><a href="#accueil" data-toggle="tab">Accueil</a></li>
+                <li class="active"><a  data-toggle="tab" href="#livres" >Livres</a></li>
+                <li><a href="#temoignages" data-toggle="tab">Témoignagnes</a></li> 
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane " id="accueil">Textes d' accueil</div>
+                <div class="tab-pane " id="temoignages">Tous les témoignages</div>
+                <div class="tab-pane active" id="livres">Tous les livres </div>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+         <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script>
+        $('a').click(function (e){
+            e.preventDefault();
+            $(this).tab('show');
+            });
+     </script>
+       
+</body>
+ </html>
