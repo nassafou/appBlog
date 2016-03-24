@@ -17,22 +17,23 @@
     </style>
 </head>
 <body>
-       
-            <button class="btn btn-primary" data-loading-text="Chargement...">Cliquez!</button>
-                
-        
+       <div class="container">
+        <div class="col-lg-offset-2 col-lg-8">
+            <div class="carousel slide">
+                <div class="carousel-inner">
+                <div class="item active"><img alt=""
+                src="images/photo1.jpg"></div>
+                <div class="item"><img alt="" src="images/photo2.jpg"></div>
+                <div class="item"><img alt="" src="images/photo3.jpg"></div>
+            </div>
+            </div>
+        </div>
+       </div>
         <script src="js/jquery.js"></script>
      <script src="js/bootstrap.min.js"></script>
         <script>
             $(function(){
-                $('a').click(function () {
-                    with($(this)){
-                        button('loading');
-                        setTimeout(function(){
-                            button('reset');
-                            }, 4000);
-                       }
-                    })
+                $('.carousel').carousel();
                 });
         </script>
 </body>

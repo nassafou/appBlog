@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-       
-            <button class="btn btn-primary" data-loading-text="Chargement...">Cliquez!</button>
+            <a class="btn btn-primary" data-loading-text="Chargement en cours...">Chargez l'image !</a>
+            <img id="mon_image">
                 
-        
         <script src="js/jquery.js"></script>
      <script src="js/bootstrap.min.js"></script>
         <script>
             $(function(){
                 $('a').click(function () {
                     with($(this)){
-                        button('loading');
-                        setTimeout(function(){
-                            button('reset');
-                            }, 4000);
+                       if (hasClass('btn-primary')) {
+                        //code
+                        removeClass('btn-primary').addClass('btn-danger').button('loading');
+                        var image = new Image();
+                        image.onload = function() {
+                            removeClass('btn-danger').addClass('btn-primary').button('reset');
+                            $("#mon_image").attr({ src:"images/photo1.jpg" });
+                        };
+                        image.src = "images/photo1.jpg";
+                       }
                        }
                     })
                 });
