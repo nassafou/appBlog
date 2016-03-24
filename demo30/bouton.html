@@ -1,0 +1,72 @@
+ <html>
+<head>
+    <!--<link href="css/main.css" rel="stylesheet" type="text/css" />-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        /*Style pour l'exemple*/
+        [class*="col-"] {margin-bottom: 20px;}
+        img{ width: 100%;}
+        body{padding: 20px; }
+        .form-inline{ margin-top: 20px}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }  
+    </style>
+</head>
+<body>
+        <div class="row">
+            <a class="btn btn-success" data-toggle="button"> Simple bascule</a>
+            
+        </div>
+       <hr>
+       <div class="row">
+            <div class="btn-group" data-toggle="buttons">
+                <label  class="btn btn-success">
+                    <input type="checkbox"> Un
+                </label>
+                <label  class="btn btn-success">
+                    <input type="checkbox"> Deux
+                </label>
+                <label  class="btn btn-success">
+                    <input type="checkbox"> Trois
+                </label>
+            </div>
+        </div>
+       <hr>
+       <div class="row">
+            <div class="btn-group" data-toggle="buttons">
+                <label  class="btn btn-success">
+                    <input type="radio"> Un
+                </label>
+                <label  class="btn btn-success">
+                    <input type="radio"> Deux
+                </label>
+                <label  class="btn btn-success">
+                    <input type="radio"> Trois
+                </label>
+            </div>
+        </div>
+       <hr>
+       <div class="row">
+            <button class="btn btn-primary" data-loading-text="Chargement...">Cliquez!  </button>
+                
+        </div>
+       <script src="js/jquery.js"></script>
+       <script src="js/bootstrap.mini.js"></script>
+        <script>
+            $(function(){
+                $('a').click(function () {
+                    with($(this)){
+                        button('loading');
+                        setTimeout(function(){
+                            button('reset');
+                            }, 4000);
+                    }
+                    })
+                });
+        </script>
+</body>
+ </html>
