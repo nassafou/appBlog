@@ -25,12 +25,17 @@
        <div class="container">
         <div class=" col-lg-2">
             <div class="btn-group" data-toggle="buttons">
-            
-            </div>
+            <label class="btn btn-primary active" id="cycle">
+                <input type="radio" name="options">Cycle
+            </label>
+            <label class="btn btn-primary active" id="pause">
+                <input type="radio" name="options">Pause
+            </label>
             </div>
         </div>
+        
         <div class=" col-lg-8">
-            <div class="carousel slide">
+            <div class="carousel slide" id="carousel">
                 <div class="carousel-inner">
                 <div class="item active"><img alt=""
                 src="images/photo1.jpg"></div>
@@ -44,7 +49,13 @@
      <script src="js/bootstrap.min.js"></script>
         <script>
             $(function(){
-                $('.carousel').carousel();
+                $('.carousel').carousel({ interval: 2000 });
+                $('#cycle').click(function() {
+                    $('.carousel').carousel('cycle');
+                    });
+                $('#pause').click(function() {
+                    $('.carousel').carousel('pause');
+                    });
                 });
         </script>
 </body>
