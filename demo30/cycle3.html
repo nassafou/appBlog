@@ -52,8 +52,7 @@
                 </div>
             </div>
             </div>
-        </div>
-        <div class="row">
+            <div class="row">
             <div class="col-lg-12">
                 <div class="btn-group"  data-toggle="buttons">
                     <label class="btn btn-success" id="first">
@@ -69,7 +68,7 @@
                         <input type="radio" name="options"><span class="glyphicon glyphicon-step-forward"></span>  
                     </label>
                       <label class="btn btn-success" id="last">
-                        <input type="radio" name="options"><span class="glyphicon glyphicon-fast-backward"></span>  
+                        <input type="radio" name="options"><span class="glyphicon glyphicon-fast-forward"></span>  
                     </label>
                 </div>
             </div>
@@ -91,7 +90,13 @@
                 $('#next').click(function() { $('.carousel').carousel('next');
                                   });
                 $('#last').click(function() { $('.carousel').carousel(2); });
+                $('.carousel').on('slid.bs.carousel', function () {
+                    var total = $('.item').length;
+                    var current = $('.item.active').index() + 1;
+                    $('.label').text(current + ' / '+ total);
+                    });
                 });
+            
         </script>
 </body>
  </html>
