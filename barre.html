@@ -1,0 +1,56 @@
+ <html>
+<head>
+    <!--<link href="css/main.css" rel="stylesheet" type="text/css" />-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        /*Style pour l'exemple*/
+        [class*="col-"] {margin-bottom: 20px;}
+        img{ width: 100%;}
+        body{padding: 20px; }
+        .form-inline{ margin-top: 20px}
+        .well {
+            background-color: #CCC;
+            padding: 20px;
+        }  
+    </style>
+</head>
+<body>
+       <div class="container">
+       <div class="row">
+        <div class="col-sm-3 col-md-3" >
+            <div class="panel panel-info">
+                <h4 class="panel-title">
+                    <span id="icone" class="glyphicon glyphicon-folder-open"></span>
+                    <a data-toggle="collapse" href="#menu">Contenu</a>
+                </h4>
+            </div>
+            <ul id="menu" class="list-group collapse in">
+                <li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span>
+                <a href="#">Articles</a></li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-tag text-primary"></span>
+                <a href="#">Nouvelles</a></li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-file text-primary"></span>
+                <a href="#">Lettres d'information</a></li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-comment text-success"></span>
+                <a href="#">Commentaires</a><span class="badge">28</span></li>
+            </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+        <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function(){
+                $('#menu').on('shown.bs.collapse', function(){
+                    $('#icone').removeClass('glyphicon-folder-close').addClass('glyphicon-folder-open');
+                    })
+                 $('#menu').on('hidden.bs.collapse', function(){
+                    $('#icone').removeClass('glyphicon-folder-open').addClass('glyphicon-folder-close');
+                    })
+                });
+        </script>
+</body>
+ </html>
