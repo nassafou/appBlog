@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <!--<meta charset="utf-8">-->
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        
+        
+        
+        <button  class="nom" ></button>
+         <button  class="prenom" ></button>
+                            <p >  Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion
+                              dans des applications de mise en page de texte, comme Aldus PageMaker 
+                            </p>
+        <script src="js/jquery.js"></script>
+        
+        
+       <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+       <script>
+        $(document).keyup(function(touche){ // onécoute l'évenement keyup()
+        var appui = touche.which || touche.keyCode; // code est  compatible tous les navigateurs grâce à ces deux propréités
+            
+        if (appui == 13) {// si le code de la touche est égal à 13 (Entrée)
+                //code
+           }
+            alert("Vous venez d\'appuyer sur la touche Entrée");
+            });
+    
+        //Button
+        
+        //$('button') .on('click dblclick', function(){
+            //alert('Ce code fonctionne !');
+           // });
+        // Passer par un object
+        $('button').on ({
+            click : function(){
+                alert('Vous avez cliqué !'); 
+            },
+            mouseup : function(){
+                alert('Vous avez relâché le clic !')
+            }
+            });
+        
+        $('button') .on('click.nom', function(){
+                 alert('Premier événement');
+            });
+        $('button') .on('click.prenom', function(){
+                 alert('Second événement');
+            });
+        
+        $('button') .trigger('click.nom'); //exécute le clic
+       </script>
+    </body>
+</html>
