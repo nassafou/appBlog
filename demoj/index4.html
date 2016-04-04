@@ -5,22 +5,48 @@
     <body>
         
         
-        <input type="button" name="button"  id="button">
+        
+        <button  class="nom" ></button>
+         <button  class="prenom" ></button>
+         
+        
+        <script src="js/jquery.js"></script>
         
         
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+       <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
        <script>
-        //$(document).keyup(function(touche){ // onécoute l'évenement keyup()
-           // var appui = touche.which || touche.keyCode; // code est  compatible tous les navigateurs grâce à ces deux propréités
+        $(document).keyup(function(touche){ // onécoute l'évenement keyup()
+        var appui = touche.which || touche.keyCode; // code est  compatible tous les navigateurs grâce à ces deux propréités
             
-           // if (appui == 13) {// si le code de la touche est égal à 13 (Entrée)
+        if (appui == 13) {// si le code de la touche est égal à 13 (Entrée)
                 //code
-           // }
-              //alert("Vous venez d\'appuyer sur la touche Entrée");
-            //});
-        $('button') .on('click', function(){
-            alert('Ce code fonctionne !');
+           }
+            alert("Vous venez d\'appuyer sur la touche Entrée");
             });
+    
+        //Button
+        
+        //$('button') .on('click dblclick', function(){
+            //alert('Ce code fonctionne !');
+           // });
+        // Passer par un object
+        $('button').on ({
+            click : function(){
+                alert('Vous avez cliqué !'); 
+            },
+            mouseup : function(){
+                alert('Vous avez relâché le clic !')
+            }
+            });
+        
+        $('button') .on('click.nom', function(){
+                 alert('Premier événement');
+            });
+        $('button') .on('click.prenom', function(){
+                 alert('Second événement');
+            });
+        
+        $('button') .trigger('click.nom'); //exécute le clic
        </script>
     </body>
 </html>
