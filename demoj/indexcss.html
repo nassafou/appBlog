@@ -17,38 +17,24 @@
         
        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
        <script>
-        $(document).keyup(function(touche){ // onécoute l'évenement keyup()
-        var appui = touche.which || touche.keyCode; // code est  compatible tous les navigateurs grâce à ces deux propréités
-            
-        if (appui == 13) {// si le code de la touche est égal à 13 (Entrée)
-                //code
-           }
-            alert("Vous venez d\'appuyer sur la touche Entrée");
-            });
-    
-        //Button
+        $('p').css({
+            color : 'red', // couleur rouge
+            borderColor : 'green',
+            paddingRight : '30px',
+            'margin-left' : '10px',
+            width : '300px', // largeur  de 300px 
+            height : '200px' // hauteur de 200px 
+            }); // la méthode modifira la propriété "color" et la définira à "red"
         
-        //$('button') .on('click dblclick', function(){
-            //alert('Ce code fonctionne !');
-           // });
-        // Passer par un object
-        $('button').on ({
-            click : function(){
-                alert('Vous avez cliqué !'); 
-            },
-            mouseup : function(){
-                alert('Vous avez relâché le clic !')
-            }
-            });
+       // $('p').offset({
+           // left : 30,
+            //top : 200
+            //});
         
-        $('button') .on('click.nom', function(){
-                 alert('Premier événement');
-            });
-        $('button') .on('click.prenom', function(){
-                 alert('Second événement');
-            });
+        $('p').position({
         
-        $('button') .trigger('click.nom'); //exécute le clic
+            left : 200
+            });
        </script>
     </body>
 </html>
