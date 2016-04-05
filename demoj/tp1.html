@@ -15,7 +15,7 @@
             <input type="submit" id="envoi" value="Envoyer" /> <input type="reset" id="rafraichir" value="Rafraichir" />
         </form>
         
-        
+        <script src="js/jquery.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
        <script>
         $(document).ready(function() {
@@ -26,9 +26,7 @@
                                $envoi  = $('#envoi'),
                                $reset  = $('#rafraichir'),
                                $erreur = $('#erreur'),
-                               $champ  = $('.champ');
-                           
-                           
+                               $champ  = $('.champ');    
         });
         
         $champ.keyup(function(){
@@ -61,6 +59,35 @@
                                                           });                 
                                       }
                    });
+        //Fonction de vérification du champ vide
+        function verifier(champ) {
+            if (champ.val() == "") { // si le champ est vide
+                $erreur.css('display', 'block'); // on affiche le message d'erreur
+                champ.css({
+                    borderColor : 'red',
+                    color : 'red'
+                    });
+            }
+        }
+        
+        $envoi.click(function(e){
+            e.preventDefault(); // On annule la fonction par défaut du bouton envoi
+            
+            // puis on lance la fonction de vérification sur tous les champs:
+            verifier($pseudo);
+            verifier($mdp);
+            verifier($confirmation);
+            verifier($mail);
+            });
+        
+        $reset.click(function(){
+            $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
+                borderColor : '#ccc',
+                color  : '#555'
+                });
+            $erreur.css('display', 'none'); // on prend soin de cacher le message d'erreur
+            });
+        
        </script>
     </body>
 </html>
