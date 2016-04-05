@@ -11,11 +11,10 @@
             <label for="mdp">Mot de passe</label><input type="password" id="mdp" class="champ"><br /><br />
             <label for="confirmation">Confirmation</label> <input type="password" id="confirmation" class="champ" /><br /><br />
             <label for="mail">E-mail</label> <input type="text" id="mail" class="champ" /><br /><br />
-            
             <input type="submit" id="envoi" value="Envoyer" /> <input type="reset" id="rafraichir" value="Rafraichir" />
         </form>
         
-        
+       <!-- <script src="js/jquery.js"></script>--->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
        <script>
         $(document).ready(function() {
@@ -26,11 +25,7 @@
                                $envoi  = $('#envoi'),
                                $reset  = $('#rafraichir'),
                                $erreur = $('#erreur'),
-                               $champ  = $('.champ');
-                           
-                           
-        });
-        
+                               $champ  = $('.champ');    
         $champ.keyup(function(){
             if ($(this).val().length < 5) {// si la chaine de caractères est inférieure à 5
                 $(this).css({// on rend le champ rouge
@@ -61,6 +56,38 @@
                                                           });                 
                                       }
                    });
+        // Fonction annulation et vérification de tous les champs
+        $envoi.click(function(e){
+            e.preventDefault(); // On annule la fonction par défaut du bouton envoi
+            
+            // puis on lance la fonction de vérification sur tous les champs:
+            verifier($pseudo);
+            verifier($mdp);
+            verifier($confirmation);
+            verifier($mail);
+            });
+        
+        // fonction reset 
+         $reset.click(function(){
+            $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
+                borderColor : '#ccc',
+                color  : '#555'
+                });
+            $erreur.css('display', 'none'); // on prend soin de cacher le message d'erreur
+            });
+        
+        //Fonction de vérification du champ vide
+        function verifier(champ) {
+            if (champ.val() == "") { // si le champ est vide
+                $erreur.css('display', 'block'); // on affiche le message d'erreur
+                champ.css({
+                    borderColor : 'red',
+                    color : 'red'
+                    });
+            }
+        }
+        
+         });
        </script>
     </body>
 </html>

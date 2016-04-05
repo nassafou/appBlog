@@ -1,6 +1,23 @@
 <html>
     <head></head>
     <body>
+        <div id="erreur">
+            <p>champs non remplis du formulaire!</p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $('p')
+            .animate({
+                width : '750px',
+                
+                }, {
+                    duration : 1000,
+                    queue : false
+                    })
+            .animate({
+                fontSize : '35px'
+                }, 1000);
+        </script>
         
     </body>
 </html>

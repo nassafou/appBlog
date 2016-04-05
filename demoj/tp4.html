@@ -7,10 +7,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script>
             $('p')
-            .animate({
-                fontSize : ['50px', 'linear'], // cette propriété s'animera de facon linéaire
-                width : '200px' // les autres s'animeront de la facon définit ensuite : swing  
-                }, 'swing');
+            .hide('slow') // cache le paragraphe en 600ms
+            
+            
+            .show('fast', function(){
+                alert('Paragraphe affiché !');
+                });// affiche le paragraphe en 200ms, et lance une alerte  à la fin de l'animation
         </script>
         
     </body>

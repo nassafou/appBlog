@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <div id="erreur">
+            <p>champs non remplis du formulaire!</p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $('p')
+            .animate({
+                fontSize : '50px', // cette propriété s'animera de facon linéaire
+                width : '200px' // les autres s'animeront de la facon définit ensuite : swing  
+                },
+                {
+                     easing : 'swing',
+                     specialEasing : { // on dzefnit la propriété
+                        fontSize : 'linear' // on definit la liste de toutes les propriétés CSS dans un objet en donnant leur evolution
+                        
+                     }
+                });
+        </script>
+        
+    </body>
+</html>

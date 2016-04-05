@@ -6,11 +6,9 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script>
-            $('p')
-            .animate({
-                fontSize : ['50px', 'linear'], // cette propriété s'animera de facon linéaire
-                width : '200px' // les autres s'animeront de la facon définit ensuite : swing  
-                }, 'swing');
+            $('p').toggle(true); // aura le meme role que show
+            $('p').toggle(false); // aura le meme role que hide
+            
         </script>
         
     </body>
