@@ -1,26 +1,66 @@
 <html>
     <head>
-        <!--<meta charset="utf-8">-->
-        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         
         <div id="erreur">
-            <p>Vous n'avez pas rempli correctement les champs du formaulaire !</p>
+            <p>Vous n avez pas rempli correctement les champs du formaulaire !</p>
         </div>
         <form>
             <label for="pseudo">Pseudonyme</label><input type="text" id="pseudo" class="champ"><br /><br />
             <label for="mdp">Mot de passe</label><input type="password" id="mdp" class="champ"><br /><br />
             <label for="confirmation">Confirmation</label> <input type="password" id="confirmation" class="champ" /><br /><br />
             <label for="mail">E-mail</label> <input type="text" id="mail" class="champ" /><br /><br />
+            
             <input type="submit" id="envoi" value="Envoyer" /> <input type="reset" id="rafraichir" value="Rafraichir" />
         </form>
         
         
-       <!-- <script src="js/jquery.js"></script>-->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
        <script>
+        $(document).ready(function() {
+                           var $pseudo = $('#pseudo'),
+                               $mdp    = $('#mdp'),
+                               $confirmation = $('#configuration'),
+                               $mail   = $('#mail'),
+                               $envoi  = $('#envoi'),
+                               $reset  = $('#rafraichir'),
+                               $erreur = $('#erreur'),
+                               $champ  = $('.champ');
+                           
+                           
+        });
         
+        $champ.keyup(function(){
+            if ($(this).val().length < 5) {// si la chaine de caractères est inférieure à 5
+                $(this).css({// on rend le champ rouge
+                            borderColor : 'red',
+                            color : 'red'
+                });
+            }
+                else{
+                    $(this).css({ //si tout est bon, on le rend vert
+                        borderColor : 'green',
+                        color : 'green'
+                        });   
+                }
+            });
+        
+        $confirmation.keyup(function(){
+                   if($(this).val() != $mdp.val()){ // si la confirmation est différente du mot de passe
+                                      $(this).css({ // on rend le champ rouge 
+                                                         borderColor : 'red',
+                                                          color  : 'red'
+                                                         });
+                   }
+                                      else {
+                                        $(this).css({ // si tout est bon, on le rend vert
+                                                          borderColor  : 'green',
+                                                           color : 'green'
+                                                          
+                                                          });                 
+                                      }
+                   });
        </script>
     </body>
 </html>
