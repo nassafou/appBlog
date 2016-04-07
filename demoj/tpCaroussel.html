@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style type="text/css" rel="stylesheet" href="css/main.css" >
+            
+        </style>
+    </head>
+    <body>
+         
+        
+       <div id="carrousel">
+        <ul>
+            <li><img src="images/zurick.jpg"  width="628" height="328"/></li>
+            <li><img src="images/tiger.jpg"  width="628" height="328" /></li>
+            <li><img src="images/nature.jpg"  width="628" height="328" /></li>
+            <li><img src="images/jument.jpg"  width="628" height="328" /></li>
+        </ul>
+        </div>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+       $(document).ready(function(){
+         var $carrousel = $('#carrousel'), //On cible le bloc de carrousel
+             $img = $('#carrousel img'), // on cible les images contenues dans le carrousel
+             indexImg = $img.length - 1, // on definit l'index du dernier élement
+             i = 0, // on initialise le compteur
+             $currentImg = $img.eq(i); // on cible l'image courante , qui possede l'index i (pour l'instant 0)
+             
+             $img.css('display', 'none'); // on cache les images
+             $currentImg.css('display', 'block'); // on affiche seulement l'image  courante
+             $carrousel.append('<div class=""controls><span class="prev">Precedent</span> <span class="next">Suivant</span></div>');
+       
+        $('.next').click(function(){ // image suivante
+            
+            i++; //On incrémente le compteur
+            if (i <= indexImg) {
+                //code
+                $img.css('display', 'none'); // on cache les images
+            $currentImg = $img.eq(i); // on definit la nouvelle image
+            $currentImg.css('display', 'block'); // puis on affiche 
+            }
+            else{
+                i = indexImg;
+            }
+            });
+        
+        $('.prev').click(function(){ // image précédente
+            
+            i--; //On décrémente le compteur, puis on réalise la même chose pour la fonction suivante
+           
+           if (i >= 0) {
+            //code
+             $img.css('display', 'none'); // on cache les images
+            $currentImg = $img.eq(i); // on definit la nouvelle image
+            $currentImg.css('display', 'block'); // puis on affiche 
+           }
+           else{
+            i = 0;
+           } 
+            });
+        
+        function slide() {
+            setTimeout(function(){
+                if (i < indexImg) { // si le compteur est inférieur au dernier index 
+                    i++; // on l'incrémente
+                }
+                else{ // sinon, on le remet à 0 (première ligne)
+                    i = 0;
+                }
+                $img.css('display', 'none');
+                $currentImg = $img.eq(i);
+                $currentImg.css('display', 'block');
+                
+                slideImg(); // on oublie pas de relancer la fonction à la fin 
+                }, 7000); // on définit l'intervalle à 7000 millisecondes(7s)
+        }
+        slideImg(); // on lance la fonction une prémière fois
+        });
+        </script>
+        
+    </body>
+</html>
