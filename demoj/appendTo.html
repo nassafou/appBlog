@@ -1,0 +1,44 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Titre h1</h1>
+            <p>
+               
+                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page <strong>avant impression</strong>. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+            par son inclusion <a> Rouge </a>dans des applications de mise en page de texte, comme Aldus PageMaker!</p><br />
+        
+        
+       <div class="pomme">
+        element a supprime
+        </div>
+       <div class="restera">
+        element restera
+       </div>
+       <div class="poire">
+        poire
+       </div>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+        //$('div').html(); // renvoie le code HTML dans ce bloc div
+        //$('div').html('<p>Nouveau <strong>code </strong> <br /> <br /><i>italique</i></p>');
+       // $('p').appendTo('<br><strong>Texte insere apres la contenu actuel.</strong><br><br>');
+       //$('p').before( '<p>Paragraphe   precedent</p>');
+       // $('p').after( '<p>Paragraphe apres</p>');
+        //$('h1').insertBefore('p'); // insert un titre H1 et son contenu avant un paragraphe
+        //$('input').val('Nouvelle valeur !');  // modifie le contenu actuel
+        //var $clone = $('.objet').clone(); // on clone notre élément
+        //$('body').append($clone); // puis on l' ajoute a la fin de notre document
+        
+       // $('p').empty(); // vide l'élément, seules subsisteront les balises <p><</p> et leur attrinbuts
+        //$('p').remove(); // supprime l'élément, seules subsisteront les balises <p><</p> et leur attrinbuts
+        
+        //$('div').remove('.suppression'); // Supprime les éléments portant la classe supppression
+        
+        //$('.pomme').replaceWith('<p>Cet element a ete remplace </p>');
+        //$('.pomme').replaceWith($('.poire'));
+        $('p').wrapInner('<strong />'); // entoure le contenu de la balises <strong></strong>
+        </script>
+        
+    </body>
+</html>
