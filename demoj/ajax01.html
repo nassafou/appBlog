@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+         <h1>Titre h1</h1>
+            <p>
+               
+                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+            par son inclusion <a> Rouge </a>dans des applications de mise en page de texte, comme Aldus PageMaker!</p><br />
+        
+       <div>
+        
+        </div>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+        $("#envoyer").click(function(){
+            
+            $.ajax({
+                url : 'send_mail.php', // La ressource ciblée
+                type : 'POST', // Le type de la requête HTTP.
+                data : 'email=' +  email + '&contenu=' + continu_mail, // On fait passer nos variables, exactement comme en GET, au script more_com.php
+                dataType : 'html' // le type de données a recevir
+                });
+            });
+        </script>
+        
+    </body>
+</html>
