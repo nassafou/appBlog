@@ -16,7 +16,10 @@
         $("#more_com").click(function(){
             
             $.ajax({
-                url : 'more_com.php' // La ressource ciblée
+                url : 'more_com.php', // La ressource ciblée
+                type : 'GET', // Le type de la requête HTTP.
+                //data : 'utilisateur=' + nom_user
+                dataType : 'html' // le type de données a recevir
                 });
             });
         </script>
