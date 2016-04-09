@@ -19,7 +19,16 @@
                 url : 'more_com.php', // La ressource ciblée
                 type : 'GET', // Le type de la requête HTTP.
                 //data : 'utilisateur=' + nom_user
-                dataType : 'html' // le type de données a recevir
+                dataType : 'html', // le type de données a recevir, on desir recevoir du HTML
+                success : function(code_html, statut){// code_html contient le HTML renvoyé 
+                },
+                error : function(resultat, statut, erreur){
+                    
+                },
+                complete : function(resultat, statut){
+                    
+                }
+                
                 });
             });
         </script>
