@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formulaire </title>
+    </head>
+    <body>
+        <h1>Un formulare AJAX</h1>
+        <div id="resultat">
+            <!-- Nous allons afficher un retour en jQuery au visiteur--->
+            
+        </div>
+        <!---Formulaire HTML super simple à sérialiser -->
+    <form id="formulaire" method="POST" >
+        <p>
+        Nom utilisateur:<input type="text"  id="username" />
+        Mot de passe <input type="text"  id="password"  />
+	    <input type="submit"  id="submit" value="Se conncter!"  />
+        </p>
+    </form>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+         <script>
+            $(document).ready(function(){
+                $("#submit").click(function(){
+                    $.post(
+                           'connexion.php', // Un script PHP que l'on va créer juste après
+                           {
+                             login : $("#username").val(), // nous récupérons la valeur de nos inputs que l'on fait passer à connexion.php
+                             password : $("#password").val()
+                            },
+                            function(data) {
+                                if (data == 'Success') {
+                                // Le membre est connecté. Ajoutons lui un message dans la page HTML
+                                
+                                $("#resultat").html("<p>Vous avez ete connecte avec succes</p>");
+                                }
+                                else{
+                                    // Le membre n'a pas été connecté. (data vaut ici "failed")
+                                    $("#resultat").html("<p>Erreur lors de la connexion..</p>")
+                                }
+                            }
+                            //'text' // Nous souhaitons recevoir "Success" ou "Failed", donc on indique text !
+                           );
+                    });
+    
+                });
+         </script>
+    </body>
+</html>
