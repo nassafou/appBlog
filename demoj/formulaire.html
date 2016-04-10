@@ -10,7 +10,7 @@
             
         </div>
         <!---Formulaire HTML super simple à sérialiser -->
-    <form id="formulaire" method="POST" >
+    <form id="formulaire" method="POST" action="connexion.php">
         <p>
         Nom utilisateur:<input type="text"  id="username" />
         Mot de passe <input type="text"  id="password"  />
@@ -37,8 +37,8 @@
                                     // Le membre n'a pas été connecté. (data vaut ici "failed")
                                     $("#resultat").html("<p>Erreur lors de la connexion..</p>")
                                 }
-                            }
-                            //'text' // Nous souhaitons recevoir "Success" ou "Failed", donc on indique text !
+                            },
+                            'text' // Nous souhaitons recevoir "Success" ou "Failed", donc on indique text !
                            );
                     });
     
