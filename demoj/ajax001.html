@@ -1,0 +1,42 @@
+<html>
+    <head></head>
+    <body>
+         <h1>Titre h1</h1>
+            <p>
+               
+                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+            par son inclusion <a> Rouge </a>dans des applications de mise en page de texte, comme Aldus PageMaker!</p><br />
+        
+       <div>
+        
+        </div>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $("<div id='loading'></div>").insertAfter("#more_com"); // Nous ajoutons un élément après le bouton
+            $("#loading").css({//Nous appliquons du CSS à cet élément pour y afficher l'image en background
+                background : "jument.jpg", // On affiche l'image en arrière-plan
+                display :  "none" // Nous cachons l'élément
+            });
+            
+        $("#more_com").click(function(){
+            
+            $.get(
+                'more_com.php', // La ressource ciblée
+                false,
+                'fonction_retour',
+                'text'
+                //type : 'GET', // Le type de la requête HTTP.
+                //data : 'utilisateur=' + nom_user
+                //dataType : 'html', // le type de données a recevir, on desir recevoir du HTML
+                //success : function(code_html, statut){// code_html contient le HTML renvoyé
+                   // $(code_html).appendTo("#commentaires"); // On passe 
+                );
+                $("#loading").ajaxStart(function(){// Nous ciblons l'élément #loading qui est caché 
+                     $(this).show(); // Nous l'affichons quand la requete AJAX démarre
+                });
+            });
+        </script>
+        
+    </body>
+</html>
