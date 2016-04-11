@@ -18,7 +18,7 @@
         
         $insertion = $bdd->prepare('INSERT INTO messages VALUES("", :pseudo, :message)');
         $insertion->execute(array(
-                                  'pseudo' => $pseudo,
+                                  'pseudo'  => $pseudo,
                                   'message' => $message ));
     }
     else{
