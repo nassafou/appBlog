@@ -13,10 +13,10 @@
     
     if(!empty($_POST['pseudo']) AND !empty($_POST['message'])){ // si les variables ne sont pas vides
         
-        $pseudo = mysql_real_escape_string($_POST['pseudo']);
-        $message = mysql_real_escape_string($_POST['message']); // on sécurise nos données 
+        $pseudo = $_POST['pseudo'];
+        $message = $_POST['message']; // on sécurise nos données 
         
-        $insertion = $dbb->prepare('INSERT INTO messages VALUES("", :pseudo, :message)');
+        $insertion = $bdd->prepare('INSERT INTO messages VALUES("", :pseudo, :message)');
         $insertion->execute(array(
                                   'pseudo' => $pseudo,
                                   'message' => $message ));
