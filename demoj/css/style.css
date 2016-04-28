@@ -1,0 +1,15 @@
+/* éléments généraux */
+
+body{
+    padding: 0;
+    margin: 25px;
+    
+}
+
+/* navigateur*/
+
+nav {
+   display: inline-block;
+   vertical-align: top;
+}
+
