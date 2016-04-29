@@ -2,14 +2,26 @@
 
 body{
     padding: 0;
-    margin: 25px;
+    margin: 0;
     
 }
 
 /* navigateur*/
 
-nav {
+nav li {
    display: inline-block;
    vertical-align: top;
+   
 }
+
+#nav{
+    left: 166px;
+    border: 1px;
+    border-color: red;
+}
+header{
+    
+}
+
+
 
