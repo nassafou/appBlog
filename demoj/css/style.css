@@ -13,15 +13,28 @@ body{
 /* navigateur*/
 
 
-#nav li {
+nav {
     display: inline-block;
-    top: 30px;
-    left: 166px;
-    margin-bottom: 20px;
-    
+    width: 724px;
+    text-align: right;
 }
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+nav a{
+    color: #181818;
+    text-decoration: none;
+}
+
+
 header{
-    margin-left: 122px;
     
     
 }
