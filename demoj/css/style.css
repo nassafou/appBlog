@@ -3,23 +3,26 @@
 body{
     padding: 0;
     margin: 0;
+    font-size: 11px;
+    font-family: Verdana, Genava, sans-serif;
+    color: #FFF;
+    background-color: #666;
     
 }
 
 /* navigateur*/
 
-nav li {
-   display: inline-block;
-   vertical-align: top;
-   
-}
 
-#nav{
+#nav li {
+    display: inline-block;
+    top: 30px;
     left: 166px;
-    border: 1px;
-    border-color: red;
+    margin-bottom: 20px;
+    
 }
 header{
+    margin-left: 122px;
+    
     
 }
 
