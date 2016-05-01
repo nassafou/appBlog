@@ -115,6 +115,15 @@ aside{
 aside p{
     font-size: 0.8em;
 }
+aside img{
+    margin-right: 5px;
+}
+#tiger img{
+     border: 1px solid #181818;
+}
 
+#tiger{
+    text-align: center;
+}
 
 
