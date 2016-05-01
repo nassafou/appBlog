@@ -9,6 +9,12 @@ body{
     background-color: #666;
     
 }
+/*Header*/
+header{
+    background: url('images/jumentjpg') repeat-x bottom;
+}
+
+
 
 /* navigateur*/
 
@@ -31,12 +37,43 @@ nav li{
 nav a{
     color: #181818;
     text-decoration: none;
+    padding-bottom: 3px;
+    font-size: 1.3em;
 }
 
+nav a:hover{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
 
-header{
+/*banniere*/
+
+/* corps */
+section{
     
+    width: 990px;
     
+}
+article{
+    display: inline-block;
+    width: 660px;
+    text-align: justify;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+article p{
+    font-size: 0.8em;
+}
+aside{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 210px;
+    text-align: justify;
+    background-color: #766b54;
+}
+aside p{
+    font-size: 0.8em;
 }
 
 
