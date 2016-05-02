@@ -11,7 +11,6 @@ body{
 }
 /*Header*/
 header{
-    background: url('images/jumentjpg') repeat-x bottom;
 }
 
 
@@ -21,29 +20,32 @@ header{
 
 nav {
     display: inline-block;
-    width: 724px;
+    width: 1524px;
     text-align: right;
 }
 
 nav ul{
     list-style-type: none;
+    
 }
 
 nav li{
     display: inline-block;
     margin-bottom: 15px;
+    
 }
 
 nav a{
-    color: #181818;
+    color: #FFFFFF;
     text-decoration: none;
     padding-bottom: 3px;
-    font-size: 1.3em;
+    font-size: 1.9em;
 }
 
 nav a:hover{
     color: #760001;
     border-bottom: 3px solid #760001;
+    
 }
 
 /*banniere*/
@@ -115,6 +117,15 @@ aside{
 aside p{
     font-size: 0.8em;
 }
+aside img{
+    margin-right: 5px;
+}
+#tiger img{
+     border: 1px solid #181818;
+}
 
+#tiger{
+    text-align: center;
+}
 
 
