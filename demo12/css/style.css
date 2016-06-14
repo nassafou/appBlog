@@ -1,0 +1,23 @@
+body{
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF;
+    background-color: #000;
+}
+
+header{
+  border: 2px solid red;  
+}
+nav{
+    border: 2px solid blue;
+}
+
+aside{
+   border: 2px solid green;
+   height: 18px;
+}
+
+article{
+    border: 2px solid white;
+    
+}
