@@ -33,7 +33,7 @@ a:hover{
     border-bottom: 1px solid #000;
     float: right;
     margin-top: 100px;
-    width: 180px;
+    width: 800px;
 }
 
 #menu li{
@@ -55,7 +55,7 @@ a:hover{
 }
 
 #header{
-    margin-top: 5px;
+    margin-top: 15px;
     border: 2px solid red;
 }
 #footer{
@@ -65,6 +65,9 @@ a:hover{
     font-size: 85%;
 }
 #content {
+    margin-top: 200px;
     width: 800px;
     border: 2px solid green;
+    padding-left: 20px;
+    margin-left: 155px;
 }
