@@ -4,10 +4,7 @@ body{
     margin: 0;
     color: #000;
     font: normal 90% Tahoma, Verdana, Helvetica, Sans-Serif;
-    
 }
-
-
 
 a {
     text-decoration: none;
@@ -47,19 +44,22 @@ a:hover{
 
 /*id sousMenu */
 #sousMenu{
-    margin-top: 550px;
-    display: inline;
+    margin-top: 120px;
+    display: inline-block;
     vertical-align: top;
+    position: relative;
     border: 2px solid green;
+    width: 700px;
 }
 
 #filter{
-     margin-top: 500px;
-     display: inline-block;
+     margin-top: 122px;
+     display: inline-block;;
      vertical-align: top;
      position: relative;
      border: 2px solid red;
      margin-left: 15px;
+     width: 300px;
 }
 
 #recherche{
@@ -68,6 +68,7 @@ a:hover{
     vertical-align: top;
     position: relative;
     border: 2px solid blue;
+    margin-left: 320px;
 }
 
 
