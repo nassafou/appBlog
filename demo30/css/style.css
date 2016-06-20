@@ -53,6 +53,21 @@ a:hover{
 #menu a:hover{
     background: #666;
 }
+#container{
+     margin-top: 200px;
+    display:  inline-block;
+     vertical-align: top; 
+}
+
+
+#mMenu{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    border: 2px solid blue;
+    width: 50px;
+    margin-right: 805px;
+}
 
 #header{
     margin-top: 15px;
@@ -65,7 +80,9 @@ a:hover{
     font-size: 85%;
 }
 #content {
-    margin-top: 200px;
+    position: relative;
+    display:  inline-block;
+    vertical-align: top;
     width: 800px;
     border: 2px solid green;
     padding-left: 20px;
