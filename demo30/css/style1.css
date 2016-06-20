@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+a {
+    text-decoration: none;
+    
+}
+
+#page {
+    width: 980px;
+    border: 2px solid red;
+}
