@@ -1,3 +1,4 @@
+/* Générale */
 body{
     padding: 0;
     margin: 0;
@@ -13,6 +14,7 @@ a:hover{
     text-decoration: underline;
 }
 
+/* menu */
 #menu {
     margin-top: 100px;
     list-style: none;
@@ -34,12 +36,41 @@ a:hover{
     background: #666;
 }
 
+#menu ul li{
+    display: inline;
+    padding: 0;
+}
 
+/*id sousMenu */
+#sousMenu{
+    margin-top: 120px;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid green;
+}
+
+#filter{
+   display: inline-block;
+   vertical-align: top;
+   position: relative;
+    border: 2px solid red;
+}
+
+#recherche{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border: 2px solid blue;
+}
+
+
+/* page */
 #page {
     width: 980px;
     border: 2px solid red;
 }
-#menu ul li{
-    display: inline;
-    padding: 0;
+
+/* content */
+#content{
+    border: 2px solid black;
 }
