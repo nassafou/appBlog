@@ -1,120 +1,29 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Bootstrap Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="author" content="">
-<link rel="shortcut icon" href="../../docsassets/ico/favicon.png">
-<link href="css/main.css" rel="stylesheet" type="text/css" />
-<title>Starter Template for Bootstrap</title>
-<link href="starter-template.css" rel="stylesheet">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <title>Filmothèque</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body>
-       <br>
-       <br>
-       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-              <div class="container">
-              <div class="navbar-header">
-              <button type="button" class="navbar-toggle" datatoggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#">Project name</a>
+        <div id="page">
+            <div id="header">
+		<ul id="menu">
+		    <li><a href="#">Accueil</a></li>
+		    <li><a href="{{ path('myapp_film_lister') }}">Films</a></li>
+		    <li><a href="{{ path('myapp_acteur_lister') }}">Acteurs</a></li>                    
+		</ul>
             </div>
-             <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-           </div><!--/.nav-collapse -->
-         </div>
-      </div>
-      <div class="container">
-          
-     <div class="row">
-  <div class="col-sm-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="images/photo1.jpg" alt="photo">
-    </a>
-  </div>
-   <div class="col-md-3">
-    <a href="#" >
-      <img src="images/photo1.jpg" alt="photo">
-    </a>
-  </div>
- 
-</div>
-     
-     <hr>
-     
-     <div class="media">
-  <a class="pull-left" href="#">
-    <img class="media-object" src="images/photo1.jpg" alt="...">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
-    <p>    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker
-</p>
-  </div>
-</div>
-     
-      <div class="media">
-  <a class="pull-left" href="#">
-    <img class="media-object" src="images/photo1.jpg" alt="...">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
-    <p>    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker
-</p>
-  </div>
-</div>
-      
-      <hr>
-      <div class="well">
-      <ul class="list-group">
-  <li class="list-group-item active">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
-      </div>
-<hr>
 
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
-
-  <!-- Table -->
-  <table class="table">
-    <tr>
-    <th>#</th>< <th>first name</th> <th>username</th> <th>lastname</th>
-    
-    </tr>
-    <tr>
-        <td>1</td><td>youssouf</td><td>youssouf</td><td>youssouf</td>
-    </tr>
-    <tr>
-        <tr>
-            <tfoot>@copy</tfoot>
-        </tr>
-    </tr>
-  </table>
-</div>
-
-
-</div>
-
-<!-- /.container -->
-
-
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script> 
-        
+            <div id="content">
+               <ul>
+                <li>Symfony2</li>
+                <li>Symfony2</li>
+                <li>Symfony2</li>
+               </ul>
+            </div>
+            <div id="footer">
+                <p>Tous droits réservés © 2011</p>
+            </div>
+        </div>
     </body>
 </html>
