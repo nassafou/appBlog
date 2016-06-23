@@ -31,12 +31,65 @@ aside{
 }
 #barR button{
     position: absolute;
-    left: 1150px;
+    left: 1050px;
     background-color: red;
 }
 
-/* footer */
-footer{
-  position: absolute;
-  top: 590px;
+#barRetour{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #ccc;
+    display: inline-block;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    color: white;
+    font-size: 0.8em;
 }
+#bar{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    background-image: url('images/');
+    margin-bottom: 25px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  top: 790px;
+}
+#photo #tweet #amis {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tweet{
+    width: 28%;
+}
+
+#photo{
+    width: 35%;
+}
+
+#amis{
+    width: 31%;
+}
+
+#amis ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    padding-left: 2px;
+}
+
+footer{
+    padding-top: 25px;
+}
+
+
