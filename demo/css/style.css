@@ -4,17 +4,18 @@ body{
 }
 
 nav{
-    float: left;
     width: 150px;
-    border: 1px solid ; 
+    border: 1px solid ;
+    display: inline-block;
+    vertical-align: top;
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
 
-li {
-    text-decoration: none;
-    list-style: none;
-}
+
 section{
     border: 1px solid blue;
-    margin-left: 155px;
     padding-left: 5px;
+    display: inline-block;
 }
