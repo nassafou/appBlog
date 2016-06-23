@@ -31,12 +31,33 @@ aside{
 }
 #barR button{
     position: absolute;
-    left: 1150px;
+    left: 1050px;
     background-color: red;
 }
 
-/* footer */
-footer{
-  position: absolute;
-  top: 590px;
+#barRetour{
+    background-color: #ccc;
+    display: inline-block;
+    width: 1150px;
+    height: 40px;
 }
+#bar{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    background-image: url('images/');
+    margin-bottom: 25px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  top: 790px;
+}
+.photo{
+    display: inline-block;
+}
+
+
