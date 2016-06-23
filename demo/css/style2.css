@@ -59,11 +59,8 @@ aside{
 }
 
 /* footer */
-footer {
-  position: absolute;
-  top: 790px;
-}
-#photo #tweet #amis {
+
+#photo, #tweet, #amis, {
     display: inline-block;
     vertical-align: top;
 }
