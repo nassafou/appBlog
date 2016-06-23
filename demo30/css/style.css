@@ -1,3 +1,4 @@
+/*page*/
 html, body, form, fieldset {
     margin: 0;
     padding: 0;
@@ -12,10 +13,14 @@ body {
     font: normal 90% Tahoma, Verdana, Helvetica, Sans-Serif;
 }
 
+/*page */
 #page {    
     width:980px;    
     margin: 0 auto;
     border: 2px solid red;
+    position: relative;
+    height: 500px;
+    
 }
 
 a {
@@ -26,7 +31,13 @@ a {
 a:hover{
     text-decoration: underline;
 }
+/*header*/
+#header{
+    margin-top: 15px;
+    border: 2px solid red;
+}
 
+/*menu */
 #menu{
     padding: 0;
     list-style: none;
@@ -53,38 +64,44 @@ a:hover{
 #menu a:hover{
     background: #666;
 }
-#container{
-     margin-top: 200px;
-     display:  inline-block;
-     vertical-align: top; 
-}
 
+/*page*/
+#container{
+     height: 150px;
+     position: relative;
+}
 
 #mMenu{
     display: inline-block;
     vertical-align: top;
     text-align: justify;
     border: 2px solid blue;
-    width: 50px;
+    position: fixed;
+    top: 150px;
+    width: 150px;
     margin-right: 805px;
 }
 
-#header{
-    margin-top: 15px;
-    border: 2px solid red;
-}
-#footer{
-    border-top: 1px solid #CCC;
-    text-align: center;
-    color: #999;
-    font-size: 85%;
-}
+
+
+/* content */
 #content {
-    position: relative;
+    position: absolute;
     display:  inline-block;
+    top: 150px;
     vertical-align: top;
     width: 800px;
     border: 2px solid green;
     padding-left: 20px;
     margin-left: 155px;
+}
+
+/* footer */
+#footer{
+    border-top: 1px solid #CCC;
+    text-align: center;
+    position: absolute;
+    color: #999;
+    font-size: 85%;
+    top: 450px;
 }
